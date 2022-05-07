@@ -1,7 +1,6 @@
-import type { NextPage } from "next";
 import Head from "next/head";
 
-const Home: NextPage = () => {
+const Home = () => {
   return (
     <div>
       <Head>
@@ -10,7 +9,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>main page</main>
+      <main className="bg-black">main page</main>
 
       <footer></footer>
     </div>
