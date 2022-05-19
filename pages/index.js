@@ -1,4 +1,5 @@
 import Head from "next/head";
+import HeroSection from "../components/Home/HeroSection";
 
 const Home = () => {
   return (
@@ -9,7 +10,9 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-black">main page</main>
+      <main>
+        <HeroSection />
+      </main>
 
       <footer></footer>
     </div>
