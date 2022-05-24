@@ -22,8 +22,8 @@ const HeroSection = () => {
 
   return (
     <>
-      <section className="HeroSection relative all-center overflow-hidden">
-        <h2 id="HeroCap">
+      <section className="HeroSection relative all-center overflow-hidden h-screen">
+        <h2 id="HeroCap" className="whitespace-nowrap text-center absolute">
           <span>It&apos;s time for us to</span>
           <br />
           Decentralize

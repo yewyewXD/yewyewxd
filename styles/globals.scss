@@ -24,7 +24,6 @@ body {
 }
 
 .HeroSection {
-  height: 100vh;
   &::before {
     content: "";
     position: absolute;
@@ -47,12 +46,8 @@ body {
 }
 
 #HeroCap {
-  position: absolute;
   transform: translateY(-150%);
-  color: #111;
-  white-space: nowrap;
   font-size: 10vw;
-  text-align: center;
   line-height: 0.55em;
   color: #094b65;
   top: 50%;
@@ -61,14 +56,11 @@ body {
   span {
     font-size: 0.2em;
     letter-spacing: 2px;
-    font-weight: 400;
     font-family: "Poppins", sans-serif;
   }
 }
 
 #HeroBtn {
-  text-decoration: none;
-  display: inline-block;
   padding: 8px 30px;
   border-radius: 40px;
   background: #fff;
