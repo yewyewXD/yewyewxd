@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-$primary-color: #44b6fb;
+$main-color: #44b6fb;
 $dark-color: #a4a9ac;
 $light-color: #b3b4b7;
 
@@ -25,10 +25,13 @@ h4 {
 
 h1 {
   font-size: 76px;
+  font-weight: 800;
+  line-height: 1.2em;
 }
 
 h2 {
   font-size: 43px;
+  font-weight: 700;
 }
 
 h3 {
@@ -52,6 +55,15 @@ small {
   font-size: 14px;
 }
 
+.section-title {
+  line-height: 1.5;
+  letter-spacing: 1px;
+  color: $main-color;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: "Inter", sans-serif;
+}
+
 /* 
  
   Main Styles
@@ -71,7 +83,7 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 85%;
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -80,4 +92,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.text-light {
+  color: $light-color;
+}
+
+.text-main {
+  color: $main-color;
 }
