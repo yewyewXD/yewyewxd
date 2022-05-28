@@ -11,7 +11,7 @@ const AboutSection = () => {
   const values = [
     {
       icon: faHeart,
-      text: "Positively make everyone enjoy working with me :)",
+      text: "Easily make every partner enjoy working with me :)",
     },
     {
       icon: faMessage,
@@ -19,7 +19,7 @@ const AboutSection = () => {
     },
     {
       icon: faLaptopCode,
-      text: "Comfortable working remotely",
+      text: "Deliver consistent result at work",
     },
     {
       icon: faArrowTrendUp,
