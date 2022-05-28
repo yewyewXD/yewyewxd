@@ -2,9 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
+$primary-color: #44b6fb;
+$dark-color: #a4a9ac;
+$light-color: #b3b4b7;
+
+/* 
+ 
+  Typography
+  
+*/
+
 // font-family: 'DM Sans', sans-serif;
 // font-family: 'Inter', sans-serif;
 // font-family: 'Space Grotesk', sans-serif;
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+h1 {
+  font-size: 76px;
+}
+
+h2 {
+  font-size: 43px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+p,
+button {
+  font-size: 18px;
+}
+
+big {
+  font-size: 16px;
+}
+
+small {
+  font-size: 14px;
+}
+
+/* 
+ 
+  Main Styles
+  
+*/
 
 body {
   overflow-x: hidden;
@@ -13,10 +65,14 @@ body {
   box-sizing: border-box;
   font-family: "DM Sans", sans-serif;
   scroll-behavior: smooth;
+  background-color: #020710;
+  color: white;
+  font-size: 18px;
 }
 
 .container {
-  max-width: 85%;
+  width: 90%;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
