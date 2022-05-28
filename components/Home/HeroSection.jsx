@@ -6,9 +6,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faStar } from "@fortawesome/free-solid-svg-icons";
 
 const HeroSection = () => {
+  const techs = [
+    "nextjs",
+    "reactjs",
+    "nodejs",
+    "javascript",
+    "sass",
+    "mongodb",
+  ];
+
   return (
     <section className="py-32">
-      <div className="container grid grid-cols-2">
+      <div className="container grid grid-cols-2 border-b pb-24">
         <div className="flex flex-col">
           <div className="flex flex-col relative">
             <big className="section-title">web3 react developer</big>
@@ -79,6 +88,19 @@ const HeroSection = () => {
             />
           </div>
         </div>
+      </div>
+
+      <div className="container py-10 flex justify-evenly opacity-70">
+        {techs.map((tech) => (
+          <div className="" key={`icon-${tech}`}>
+            <Image
+              src={`/images/icon-${tech}.png`}
+              alt=""
+              height={80}
+              width={80}
+            />
+          </div>
+        ))}
       </div>
     </section>
   );

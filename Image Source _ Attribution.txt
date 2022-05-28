@@ -1,11 +1,17 @@
 Image Source & Attribution
 
+- Hero Section -
 
-Image Source : https://www.freepik.com
+Artistic Card:
+https://toka.b-cdn.net/wp-content/uploads/2022/04/xtgxtg.png
 
+Diamond Stars:
+https://toka.b-cdn.net/wp-content/uploads/2022/04/fvrcfv.png
 
-All credit goes to the original creator of this
-
-Tree vector created by brgfx
-Link : https://www.freepik.com/free-vector/natural-environment-lanscape-scene_5837826.htm
-
+Tech Stack Icons:
+https://icons8.com/icon/r2OarXWQc7B6/next.js
+https://icons8.com/icon/58811/react-native
+https://icons8.com/icon/54087/nodejs
+https://icons8.com/icon/108784/javascript
+https://icons8.com/icon/eJppnX5q2FuR/sass
+https://icons8.com/icon/74402/mongodb
