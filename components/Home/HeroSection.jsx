@@ -69,7 +69,7 @@ const HeroSection = () => {
             </div>
 
             <div className="flex items-center pl-9">
-              <h2>4.9</h2>
+              <h2 className="font-default">4.9</h2>
               <div className="text-light ml-4 flex items-center">
                 <FontAwesomeIcon icon={faStar} className="w-3 mr-1" />
                 <small className="font-semibold">AVG RATING</small>
