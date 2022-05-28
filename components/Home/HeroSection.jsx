@@ -96,8 +96,8 @@ const HeroSection = () => {
             <Image
               src={`/images/icon-${tech}.png`}
               alt=""
-              height={80}
-              width={80}
+              height={75}
+              width={75}
             />
           </div>
         ))}
