@@ -1,5 +1,6 @@
 import Head from "next/head";
 import AppHeader from "../components/AppHeader";
+import AboutSection from "../components/Home/AboutSection";
 import HeroSection from "../components/Home/HeroSection";
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
 
       <main>
         <HeroSection />
+        <AboutSection />
       </main>
 
       <footer></footer>
