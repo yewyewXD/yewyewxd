@@ -1,7 +1,8 @@
 import Head from "next/head";
 import AppHeader from "../components/AppHeader";
-import AboutSection from "../components/Home/AboutSection";
+import ValueSection from "../components/Home/ValueSection";
 import HeroSection from "../components/Home/HeroSection";
+import ReviewSection from "../components/Home/ReviewSection";
 
 const Home = () => {
   return (
@@ -16,7 +17,8 @@ const Home = () => {
 
       <main>
         <HeroSection />
-        <AboutSection />
+        <ValueSection />
+        <ReviewSection />
       </main>
 
       <footer></footer>
