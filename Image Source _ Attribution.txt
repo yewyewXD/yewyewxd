@@ -15,3 +15,12 @@ https://icons8.com/icon/54087/nodejs
 https://icons8.com/icon/108784/javascript
 https://icons8.com/icon/eJppnX5q2FuR/sass
 https://icons8.com/icon/74402/mongodb
+
+Country Icons:
+https://www.flaticon.com/free-icons/switzerland
+https://www.flaticon.com/free-icons/australia
+https://www.flaticon.com/free-icons/canada
+https://www.flaticon.com/free-icons/korea
+https://www.flaticon.com/free-icons/united-states
+https://www.flaticon.com/free-icons/singapore
+https://www.flaticon.com/free-icons/spain

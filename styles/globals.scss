@@ -44,8 +44,13 @@ h3 {
   font-size: 24px;
 }
 
-h4 {
+h4,
+.bigger {
   font-size: 22px;
+}
+
+.medium {
+  font-size: 20px;
 }
 
 button {
@@ -107,6 +112,10 @@ body {
 
 .text-light {
   color: $light-color;
+}
+
+.text-dark {
+  color: $dark-color;
 }
 
 .text-main {

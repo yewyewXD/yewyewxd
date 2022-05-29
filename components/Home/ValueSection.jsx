@@ -28,7 +28,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className="pt-24">
+    <section id="values" className="pt-24">
       <div className="container grid grid-cols-2">
         <div className="pr-6">
           <div className="h-96 w-full bg-white"></div>
