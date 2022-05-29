@@ -13,6 +13,8 @@ const HeroSection = () => {
     "javascript",
     "sass",
     "mongodb",
+    "moralisweb3",
+    "ethersjs",
   ];
 
   return (
@@ -23,8 +25,8 @@ const HeroSection = () => {
             <big className="section-title">web3 react developer</big>
             <h1 className="my-5">Together, we decentralize</h1>
             <p className="text-light">
-              Buy the new super rare piece of digital art and make your own
-              collection more valuable!
+              Money is not my priority. Only open to building useful, impactful,
+              or world-changing projects, preferably on web 3.0
             </p>
             <div className="mt-8 flex items-center">
               <a href="#projects" className="button-main">
@@ -98,6 +100,7 @@ const HeroSection = () => {
               alt=""
               height={75}
               width={75}
+              quality={60}
             />
           </div>
         ))}

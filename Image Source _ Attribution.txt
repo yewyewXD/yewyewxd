@@ -15,6 +15,8 @@ https://icons8.com/icon/54087/nodejs
 https://icons8.com/icon/108784/javascript
 https://icons8.com/icon/eJppnX5q2FuR/sass
 https://icons8.com/icon/74402/mongodb
+https://moralis.io/
+https://docs.ethers.io/v5/
 
 Country Icons:
 https://www.flaticon.com/free-icons/switzerland
