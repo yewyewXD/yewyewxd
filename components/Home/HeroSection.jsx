@@ -94,7 +94,7 @@ const HeroSection = () => {
         {techs.map((tech) => (
           <div className="" key={`icon-${tech}`}>
             <Image
-              src={`/images/icon/${tech}.png`}
+              src={`/images/tech/${tech}.png`}
               alt=""
               height={75}
               width={75}
