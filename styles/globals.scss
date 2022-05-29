@@ -122,6 +122,15 @@ body {
   color: $main-color;
 }
 
+.underline-main {
+  text-decoration: underline;
+  text-decoration-color: $main-color;
+}
+
+.bg-main {
+  background-color: $main-color;
+}
+
 .button-main {
   background: $main-color;
   border-radius: 100px;
@@ -133,4 +142,29 @@ body {
   &:hover {
     opacity: 0.8;
   }
+}
+
+.slider-control- {
+  &centerleft {
+    top: 0 !important;
+    right: 40px !important;
+    left: unset !important;
+  }
+  &centerright {
+    top: 0 !important;
+  }
+}
+
+.hoverOpacity {
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.disabled,
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
 }

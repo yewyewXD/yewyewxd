@@ -30,7 +30,7 @@ const HeroSection = () => {
               <a href="#projects" className="button-main">
                 View Projects
               </a>
-              <div className="ml-7 flex items-center underline cursor-pointer transition-opacity duration-300 hover:opacity-80">
+              <div className="ml-7 flex items-center underline hoverOpacity">
                 <FontAwesomeIcon icon={faDownload} className="w-3 mr-1" />
                 <a href="/docs/resume.pdf" target="_blank">
                   <big>Resume</big>
@@ -55,7 +55,7 @@ const HeroSection = () => {
             href="https://www.upwork.com/freelancers/~01186da3d6211b3ce4"
             rel="noopener noreferrer"
             target="_blank"
-            className="mt-20 flex items-center hover:opacity-80 transition-opacity duration-300"
+            className="mt-20 flex items-center hoverOpacity"
           >
             <div className="flex items-center border-r pr-7">
               <Image
