@@ -1,6 +1,8 @@
 import React from "react";
 import navItems from "../json/navItems.json";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 const AppHeader = () => {
   return (
@@ -8,7 +10,7 @@ const AppHeader = () => {
       <div className="container flex justify-between items-center">
         <div className="section-title">yewyewXD</div>
 
-        <nav className="flex items-center">
+        <nav className="flex items-center font-medium">
           {navItems.map((navItem) => (
             <div
               className={navItem.subLinks ? "NavItemExpand relative" : ""}
@@ -17,6 +19,12 @@ const AppHeader = () => {
               <Link href={navItem.link} passHref>
                 <span className="py-4 px-5 flex items-center cursor-pointer">
                   {navItem.name}
+                  {navItem.subLinks && (
+                    <FontAwesomeIcon
+                      icon={faAngleDown}
+                      className="NavItemAccord w-2 ml-3"
+                    />
+                  )}
                 </span>
               </Link>
 

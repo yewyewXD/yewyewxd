@@ -78,6 +78,7 @@ big {
 
 nav {
   font-size: 15px;
+  font-family: "Inter", sans-serif;
 }
 
 small {
@@ -190,6 +191,13 @@ footer {
   background: linear-gradient(to bottom, #0b1224, #020710);
 }
 
+nav span {
+  transition: 0.3s;
+  &:hover {
+    color: $main-color;
+  }
+}
+
 .NavDropdown {
   top: 70px;
   transition: 0.2s;
@@ -208,10 +216,20 @@ footer {
   }
 }
 
+.NavItemAccord {
+  transition: 0.3s;
+}
+
 .NavItemExpand {
-  &:hover .NavDropdown {
-    pointer-events: unset;
-    top: 50px;
-    opacity: 1;
+  &:hover {
+    .NavDropdown {
+      pointer-events: unset;
+      top: 50px;
+      opacity: 1;
+    }
+
+    .NavItemAccord {
+      transform: rotate(180deg);
+    }
   }
 }
