@@ -1,13 +1,17 @@
+import React, { useRef, useState } from "react";
+import { PopupModal } from "react-calendly";
 import Head from "next/head";
 import AppHeader from "../components/AppHeader";
 import ValueSection from "../components/Home/ValueSection";
 import HeroSection from "../components/Home/HeroSection";
 import ReviewSection from "../components/Home/ReviewSection";
 import ProjectSection from "../components/Home/ProjectSection";
-import CTASection from "../components/Home/CTASection";
 import AppFooter from "../components/AppFooter";
 
 const Home = () => {
+  const [isCalendlyOpened, setIsCalendlyOpened] = useState(false);
+  const modalRef = useRef();
+
   return (
     <div>
       <Head>
@@ -19,11 +23,51 @@ const Home = () => {
       <AppHeader />
 
       <main>
+        <div
+          className={`absolute h-full w-full ${
+            isCalendlyOpened ? "" : "pointer-events-none"
+          }`}
+          ref={modalRef}
+        ></div>
+
         <HeroSection />
         <ValueSection />
         <ReviewSection />
         <ProjectSection />
-        <CTASection />
+
+        <section className="py-28">
+          <div className="container">
+            <div className="p-10 pt-14 rounded-3xl bg-secondary text-center mx-6">
+              <div className="font-heading text-5xl font-bold">
+                Let&apos;s change the world{" "}
+                <u className="underline-main">together</u>
+              </div>
+
+              <div className="text-light font-medium font-heading mt-6 mb-8 w-8/12 mx-auto">
+                Schedule a free consultation, either video or voice call with me
+                on Calendly. I look forward to our collaboration!
+              </div>
+
+              <button
+                className="button-main"
+                onClick={() => {
+                  setIsCalendlyOpened(true);
+                }}
+              >
+                Get a free consultation
+              </button>
+
+              <PopupModal
+                url="https://calendly.com/yewyewxd"
+                open={isCalendlyOpened}
+                onModalClose={() => {
+                  setIsCalendlyOpened(false);
+                }}
+                rootElement={modalRef.current}
+              />
+            </div>
+          </div>
+        </section>
       </main>
 
       <AppFooter />
