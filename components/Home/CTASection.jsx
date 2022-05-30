@@ -11,7 +11,7 @@ const CTASection = () => {
           </div>
 
           <div className="text-light font-medium font-heading mt-6 mb-8 w-8/12 mx-auto">
-            Schedule a free consultation {"(video / voice call)"} with me on
+            Schedule a free consultation, either video or voice call with me on
             Calendly. I look forward to our collaboration!
           </div>
 

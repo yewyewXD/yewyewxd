@@ -5,6 +5,7 @@ import HeroSection from "../components/Home/HeroSection";
 import ReviewSection from "../components/Home/ReviewSection";
 import ProjectSection from "../components/Home/ProjectSection";
 import CTASection from "../components/Home/CTASection";
+import AppFooter from "../components/AppFooter";
 
 const Home = () => {
   return (
@@ -25,7 +26,7 @@ const Home = () => {
         <CTASection />
       </main>
 
-      <footer></footer>
+      <AppFooter />
     </div>
   );
 };

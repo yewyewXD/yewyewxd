@@ -27,3 +27,7 @@ https://www.flaticon.com/free-icons/united-states
 https://www.flaticon.com/free-icons/singapore
 https://www.flaticon.com/free-icons/spain
 https://www.flaticon.com/free-icons/thailand
+
+Social Icons:
+https://www.flaticon.com/free-icons/github
+https://www.flaticon.com/free-icons/linkedin
