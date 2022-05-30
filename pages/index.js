@@ -6,7 +6,7 @@ import ReviewSection from "../components/Home/ReviewSection";
 import ProjectSection from "../components/Home/ProjectSection";
 import CTASection from "../components/Home/CTASection";
 
-const Home = ({ openCalendly }) => {
+const HomePage = ({ openCalendly }) => {
   return (
     <>
       <Head>
@@ -23,4 +23,4 @@ const Home = ({ openCalendly }) => {
   );
 };
 
-export default Home;
+export default HomePage;
