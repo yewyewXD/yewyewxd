@@ -33,7 +33,7 @@ const AppLayout = ({ children }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <AppHeader />
+      <AppHeader openCalendly={openCalendly} />
 
       <div
         id="modal"

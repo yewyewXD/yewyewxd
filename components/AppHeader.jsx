@@ -2,9 +2,9 @@ import React from "react";
 import navItems from "../json/navItems.json";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown, faPhone } from "@fortawesome/free-solid-svg-icons";
 
-const AppHeader = () => {
+const AppHeader = ({ openCalendly }) => {
   return (
     <header className="mt-4">
       <div className="container flex justify-between items-center">
@@ -39,6 +39,14 @@ const AppHeader = () => {
               )}
             </div>
           ))}
+
+          <button
+            className="NavCTA flex items-center ml-5"
+            onClick={openCalendly}
+          >
+            <FontAwesomeIcon icon={faPhone} className="w-4" />
+            <span className="leading-tight ml-2">Schedule</span>
+          </button>
         </nav>
       </div>
     </header>

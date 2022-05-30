@@ -11,8 +11,9 @@ const CTASection = ({ openCalendly }) => {
           </div>
 
           <div className="text-light font-medium font-heading mt-6 mb-8 w-8/12 mx-auto">
-            Schedule a free consultation, either video or voice call with me on
-            Calendly. I look forward to our collaboration!
+            Jump in on a call with me and I will explain how to transform your
+            ideas into an actual web3.0 product. I look forward to our
+            collaboration!
           </div>
 
           <button className="button-main" onClick={openCalendly}>

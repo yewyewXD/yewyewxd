@@ -233,3 +233,19 @@ nav span {
     }
   }
 }
+
+.NavCTA {
+  font-size: 15px;
+  padding: 9px 22px;
+  padding-left: 20px;
+  border-radius: 15px;
+  border: solid 1px $light-color;
+  transition: 0.3s;
+  &:hover {
+    background-color: white;
+    color: black;
+    span {
+      color: black;
+    }
+  }
+}
