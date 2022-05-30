@@ -9,7 +9,12 @@ const AppFooter = () => {
       </span>
 
       <div>
-        <a className="hoverOpacity">
+        <a
+          className="hoverOpacity"
+          href="https://www.linkedin.com/in/yewyewxd/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Image
             src="/images/social-linkedin.png"
             alt=""
@@ -18,7 +23,12 @@ const AppFooter = () => {
           />
         </a>
 
-        <a className="ml-2 hoverOpacity">
+        <a
+          className="ml-2 hoverOpacity"
+          href="https://github.com/yewyewXD"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Image
             src="/images/social-github.png"
             alt=""
