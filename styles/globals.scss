@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 $main-color: #44b6fb;
+$secondary-color: #020710;
 $dark-color: #a4a9ac;
 $light-color: #b3b4b7;
 
@@ -20,7 +21,8 @@ h1,
 h2,
 h3,
 h4,
-.button-main {
+.button-main,
+.font-heading {
   font-family: "Space Grotesk", sans-serif;
 }
 
@@ -87,6 +89,23 @@ small {
   font-family: "Inter", sans-serif;
 }
 
+.text-light {
+  color: $light-color;
+}
+
+.text-dark {
+  color: $dark-color;
+}
+
+.text-main {
+  color: $main-color;
+}
+
+.underline-main {
+  text-decoration: underline;
+  text-decoration-color: $main-color;
+}
+
 /* 
  
   Main Styles
@@ -117,25 +136,12 @@ body {
   align-items: center;
 }
 
-.text-light {
-  color: $light-color;
-}
-
-.text-dark {
-  color: $dark-color;
-}
-
-.text-main {
-  color: $main-color;
-}
-
-.underline-main {
-  text-decoration: underline;
-  text-decoration-color: $main-color;
-}
-
 .bg-main {
   background-color: $main-color;
+}
+
+.bg-secondary {
+  background-color: #0b1224;
 }
 
 .button-main {

@@ -4,6 +4,7 @@ import ValueSection from "../components/Home/ValueSection";
 import HeroSection from "../components/Home/HeroSection";
 import ReviewSection from "../components/Home/ReviewSection";
 import ProjectSection from "../components/Home/ProjectSection";
+import CTASection from "../components/Home/CTASection";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
         <ValueSection />
         <ReviewSection />
         <ProjectSection />
+        <CTASection />
       </main>
 
       <footer></footer>
