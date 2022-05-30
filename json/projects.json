@@ -1,0 +1,37 @@
+{
+  "LG": {
+    "name": "NFT Minting dApp",
+    "description": "Empowering all women and onboarding them into web3",
+    "image": "SOS.gif"
+  },
+
+  "MD": [
+    {
+      "name": "NFT Minting dApp",
+      "description": "ChainEntities - an utopia in the metaverse",
+      "image": "CE.png"
+    },
+
+    {
+      "name": "B2B Marketplace & Social Network",
+      "description": "Innoloft - Connecting the most innovative players across all tech industries",
+      "image": "INNO.webp"
+    }
+  ],
+
+  "SM": [
+    {
+      "name": "Crypto Swap / Buy",
+      "description": "BLIZZ - A token dedicated to enlightenment",
+      "image": "BLIZZ.jpg",
+      "style": { "marginRight": "9px" }
+    },
+
+    {
+      "name": "Weather app",
+      "description": "Not the typical weather app that everyone builds",
+      "image": "RWA.png",
+      "style": { "marginLeft": "9px" }
+    }
+  ]
+}
