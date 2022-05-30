@@ -27,7 +27,7 @@ const ReviewSection = () => {
             autoplay
             animation="fade"
             speed={2500}
-            autoplayInterval={4000}
+            autoplayInterval={5000}
             renderCenterLeftControls={({ previousSlide, currentSlide }) => (
               <div
                 className={`w-8 h-8 all-center hoverOpacity bg-main ${

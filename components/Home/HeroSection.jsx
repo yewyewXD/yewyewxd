@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Image from "next/image";
-import styles from "../../styles/Home/hero.module.scss";
+import styles from "../../styles/pages/home.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faStar } from "@fortawesome/free-solid-svg-icons";
 
@@ -81,7 +81,7 @@ const HeroSection = () => {
         </div>
 
         <div className="flex justify-end">
-          <div className={styles.Card}>
+          <div className={styles.HeroCard}>
             <Image
               src="/images/hero-card.png"
               alt=""

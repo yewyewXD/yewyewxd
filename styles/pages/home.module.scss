@@ -1,0 +1,41 @@
+.HeroCard {
+  position: relative;
+  height: 450px;
+  width: 300px;
+}
+
+.ProjectCard {
+  border-radius: 30px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+  background-color: #0b1224;
+  margin-bottom: 30px;
+
+  &__Img {
+    &LG {
+      height: 522px;
+      width: 522px;
+    }
+    &MD {
+      height: 367px;
+      width: 367px;
+    }
+    &SM {
+      height: 225px;
+      width: 225px;
+    }
+
+    &LG,
+    &MD,
+    &SM {
+      border-radius: 30px;
+      background-color: white;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
