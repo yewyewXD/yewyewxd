@@ -18,7 +18,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="pt-32">
+    <section className="HeroSection pt-32">
       <div className="container grid grid-cols-2 border-b pb-24">
         <div className="flex flex-col">
           <div className="flex flex-col relative">

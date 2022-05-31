@@ -1,10 +1,23 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 
 const CTASection = ({ openCalendly }) => {
   return (
     <section className="py-28">
       <div className="container">
-        <div className="p-10 pt-14 rounded-3xl bg-secondary text-center mx-6">
+        <div className="p-12 pt-14 rounded-3xl bg-secondary text-center mx-6 relative">
+          <img
+            src="/images/general-star.png"
+            className="absolute h-10 w-10 bottom-14 left-32"
+            alt=""
+          />
+
+          <img
+            src="/images/general-star.png"
+            className="absolute h-8 w-8 top-10 right-24"
+            alt=""
+          />
+
           <div className="font-heading text-5xl font-bold">
             Let&apos;s change the world{" "}
             <u className="underline-main">together</u>
