@@ -16,7 +16,7 @@ const AppFooter = () => {
           rel="noopener noreferrer"
         >
           <Image
-            src="/images/social-linkedin.png"
+            src="/images/brand-linkedin.png"
             alt=""
             height={20}
             width={20}
@@ -29,12 +29,7 @@ const AppFooter = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            src="/images/social-github.png"
-            alt=""
-            height={20}
-            width={20}
-          />
+          <Image src="/images/brand-github.png" alt="" height={20} width={20} />
         </a>
       </div>
     </footer>

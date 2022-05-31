@@ -1,8 +1,8 @@
 import React from "react";
 
-const StorySection = () => {
+const JourneySection = () => {
   return (
-    <section className="py-24">
+    <section className="pt-24">
       <div className="container text-center">
         <big className="section-title">About me</big>
         <h2 className="mt-2 mb-4">A little back story</h2>
@@ -18,4 +18,4 @@ const StorySection = () => {
   );
 };
 
-export default StorySection;
+export default JourneySection;
