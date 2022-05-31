@@ -28,7 +28,7 @@ const ProjectSection = () => {
           <h2>Built with my heart and soul</h2>
         </div>
 
-        <div className="flex">
+        <div className="flex justify-center">
           <div
             className="flex flex-col justify-between"
             style={{ marginRight: "13px" }}
