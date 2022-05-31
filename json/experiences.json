@@ -4,7 +4,7 @@
     "company": "Upwork Inc.",
     "achievement": "Generated over $2M+ for clients with NFT collections & decentralized applications. Top rated on Upwork.",
     "date": "Nov 2021 - Present",
-    "image": "brand-upwork-dark.jfif"
+    "image": "brand/upwork-dark.jfif"
   },
 
   {
@@ -12,7 +12,7 @@
     "company": "Innoloft GmbH",
     "achievement": "Grew our B2B marketplace from 10k to 30k users. Pushed new features every week. Mentored junior frontend developers.",
     "date": "Oct 2020 - Mar 2022",
-    "image": "brand-innoloft.jfif"
+    "image": "brand/innoloft.jfif"
   },
 
   {
@@ -20,6 +20,6 @@
     "company": "Upwork Inc.",
     "achievement": "Solved back-breaking JavaScript bugs for countless developers. Pixel-perfectly translated mockups to websites.",
     "date": "Apr 2020 - Nov 2020",
-    "image": "brand-upwork-dark.jfif"
+    "image": "brand/upwork-dark.jfif"
   }
 ]

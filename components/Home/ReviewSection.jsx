@@ -87,7 +87,7 @@ const ReviewSection = () => {
                         className="flex items-center"
                       >
                         <Image
-                          src={"/images/brand-linkedin.png"}
+                          src={"/images/brand/linkedin.png"}
                           className="hoverOpacity"
                           alt=""
                           height={20}

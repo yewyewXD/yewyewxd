@@ -61,7 +61,7 @@ const HeroSection = () => {
           >
             <div className="flex items-center border-r pr-7">
               <Image
-                src="/images/brand-upwork.png"
+                src="/images/brand/upwork.png"
                 alt=""
                 className="rounded-full"
                 height={40}
