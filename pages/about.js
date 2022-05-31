@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import StorySection from "../components/About/StorySection";
+import JourneySection from "../components/About/JourneySection";
 
 const AboutPage = ({ openCalendly }) => {
   return (
@@ -11,6 +12,7 @@ const AboutPage = ({ openCalendly }) => {
       </Head>
 
       <StorySection />
+      <JourneySection />
     </>
   );
 };
