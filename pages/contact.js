@@ -1,5 +1,9 @@
 import React from "react";
 import Head from "next/head";
+import Image from "next/image";
+import contactMedias from "../json/contactMedias.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const ContactPage = ({ openCalendly }) => {
   return (
@@ -24,9 +28,30 @@ const ContactPage = ({ openCalendly }) => {
             <div className="pr-5 flex flex-col">
               <div className="rounded-lg p-10 mb-5 bg-form">
                 <h4 className="mb-7">{"Social media & email"}</h4>
-                <div>test</div>
-                <div>test</div>
-                <div>test</div>
+                {contactMedias.map((media) => (
+                  <a
+                    href={media.link}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    key={`contact${media.name}`}
+                    className="flex items-center mt-4 hoverOpacity w-max"
+                  >
+                    {media.isEmail ? (
+                      <FontAwesomeIcon
+                        icon={faEnvelope}
+                        className="w-6 text-main"
+                      />
+                    ) : (
+                      <Image
+                        src={`/images/${media.image}`}
+                        alt=""
+                        height={24}
+                        width={24}
+                      />
+                    )}
+                    <big className="ml-3 text-light">{media.name}</big>
+                  </a>
+                ))}
               </div>
 
               <div className="rounded-lg p-10 bg-form">
