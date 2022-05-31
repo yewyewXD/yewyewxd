@@ -3,7 +3,7 @@ import React from "react";
 
 const CTASection = ({ openCalendly }) => {
   return (
-    <section className="py-28">
+    <section className="CTASection py-28">
       <div className="container">
         <div className="p-12 pt-14 rounded-3xl bg-secondary text-center mx-6 relative">
           <img

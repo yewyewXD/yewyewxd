@@ -194,6 +194,15 @@ footer {
 .HeroSection {
   background: radial-gradient(#44b5fb30, transparent 70%);
 }
+.ValueSection {
+  background: url("/images/drawing-lightning.png") 95% 0 / 180px auto no-repeat;
+}
+.ProjectSection {
+  background: url("/images/drawing-tornado.png") 1% 0 / 300px auto no-repeat;
+}
+.CTASection {
+  background: url("/images/drawing-arrow.png") 96% 0 / 185px auto no-repeat;
+}
 
 nav span {
   transition: 0.3s;

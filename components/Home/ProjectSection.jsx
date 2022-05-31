@@ -21,7 +21,7 @@ const Card = ({ name, description, image, size, style }) => {
 
 const ProjectSection = () => {
   return (
-    <section id="projects" className="pt-28">
+    <section id="projects" className="ProjectSection pt-28">
       <div className="container">
         <div className="text-center mb-16">
           <big className="mb-5 section-title">Proud Creations</big>
