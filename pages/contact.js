@@ -4,6 +4,7 @@ import Image from "next/image";
 import contactMedias from "../json/contactMedias.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import ContactForm from "../components/Contact/ContactForm";
 
 const ContactPage = ({ openCalendly }) => {
   return (
@@ -53,13 +54,12 @@ const ContactPage = ({ openCalendly }) => {
                   </a>
                 ))}
               </div>
-
-              <div className="rounded-lg p-10 bg-form">
-                <h4>Opening hours</h4>
-              </div>
             </div>
 
-            <div className="bg-form rounded-lg p-10">testing</div>
+            <div className="bg-form rounded-lg p-10">
+              <h4 className="mb-7">Send me a message</h4>
+              <ContactForm />
+            </div>
           </div>
         </div>
       </section>

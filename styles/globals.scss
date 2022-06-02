@@ -266,3 +266,17 @@ nav span {
     }
   }
 }
+
+.ContactInput {
+  border: solid 2px #313743;
+  outline: none;
+  background-color: #313743;
+  font-size: 16px;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 16px;
+  margin-top: 3px;
+  &:focus {
+    border: solid 2px $main-color;
+  }
+}
