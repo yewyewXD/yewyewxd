@@ -1,10 +1,15 @@
 import React from "react";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import contactMedias from "../json/contactMedias.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faArrowRightLong,
+} from "@fortawesome/free-solid-svg-icons";
 import ContactForm from "../components/Contact/ContactForm";
+import CTASection from "../components/Home/CTASection";
 
 const ContactPage = ({ openCalendly }) => {
   return (
@@ -54,6 +59,22 @@ const ContactPage = ({ openCalendly }) => {
                   </a>
                 ))}
               </div>
+
+              <div className="rounded-lg p-10 mb-5 bg-form flex flex-col">
+                <h4 className="mb-4">Before contacting...</h4>
+                <div className="mb-2">
+                  Your questions might have already been answered!
+                </div>
+                <Link href="/about#faq" passHref>
+                  <span className="underline-main text-main font-medium flex items-center hoverOpacity">
+                    <FontAwesomeIcon
+                      icon={faArrowRightLong}
+                      className="w-4 mr-2"
+                    />{" "}
+                    See FAQs
+                  </span>
+                </Link>
+              </div>
             </div>
 
             <div className="bg-form rounded-lg p-10">
@@ -62,6 +83,8 @@ const ContactPage = ({ openCalendly }) => {
             </div>
           </div>
         </div>
+
+        <CTASection openCalendly={openCalendly} />
       </section>
     </>
   );
