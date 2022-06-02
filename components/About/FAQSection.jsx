@@ -38,7 +38,7 @@ const Collapsible = ({ question, answer }) => {
 
 const FAQSection = () => {
   return (
-    <section className="pt-24">
+    <section className="pt-24" id="faq">
       <div className="container">
         <div className="text-center">
           <big className="section-title">FAQ</big>
