@@ -80,14 +80,66 @@ const HeroSection = () => {
           </a>
         </div>
 
-        <div className="flex justify-end">
+        <div className="flex justify-end font-semibold text-sm">
           <div className={styles.HeroCard}>
-            <Image
-              src="/images/hero-card.png"
-              alt=""
-              layout="fill"
-              quality={100}
-            />
+            <div className="h-96 w-96 bg-gray-200 rounded-2xl mb-3 relative">
+              {/* <Image
+                src="/images/brand/upwork.png"
+                alt=""
+                layout="fill"
+              /> */}
+            </div>
+            <div className="px-2 flex justify-between items-center">
+              <div>
+                <div className="text-dark" style={{ marginBottom: "2px" }}>
+                  Web3 React Developer
+                </div>
+                <div className="text-base">Yew KangWei</div>
+              </div>
+
+              <div className="flex items-center">
+                <a
+                  className="hoverOpacity mr-2 flex items-center"
+                  href="https://www.linkedin.com/in/yewyewxd/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/images/brand/linkedin.png"
+                    alt=""
+                    className="rounded-full"
+                    height={30}
+                    width={30}
+                  />
+                </a>
+                <a
+                  className="flex items-center hoverOpacity"
+                  href="https://github.com/yewyewXD"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/images/brand/github.png"
+                    alt=""
+                    className="rounded-full"
+                    height={30}
+                    width={30}
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="mt-4 p-3 bg-gray-700 rounded-2xl">
+              <div className="h-full w-full grid grid-cols-2">
+                <div>
+                  <div className="text-dark mb-1">Availability</div>
+                  <div>30h / week</div>
+                </div>
+                <div>
+                  <div className="text-dark mb-1">Tech stack</div>
+                  <div>Next, Node, Tailwind, Ethers, Web3, Moralis</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
