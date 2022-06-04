@@ -13,10 +13,10 @@
   width: min-content;
   display: flex;
   flex-direction: column;
-  cursor: pointer;
   position: relative;
   background-color: #0b1224;
   margin-bottom: 30px;
+  overflow: hidden;
 
   &__Img {
     &LG {
