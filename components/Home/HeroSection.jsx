@@ -82,12 +82,15 @@ const HeroSection = () => {
 
         <div className="flex justify-end font-semibold text-sm">
           <div className={styles.HeroCard}>
-            <div className="h-96 w-96 bg-gray-200 rounded-2xl mb-3 relative">
-              {/* <Image
-                src="/images/brand/upwork.png"
+            <div className="h-96 w-96 rounded-2xl mb-3 relative">
+              <Image
+                src="/images/hero-nft-card.gif"
+                className="rounded-2xl"
                 alt=""
                 layout="fill"
-              /> */}
+                quality={60}
+              />
+              <div className="absolute h-full w-full opacity-20 bg-main rounded-2xl"></div>
             </div>
             <div className="px-2 flex justify-between items-center">
               <div>
