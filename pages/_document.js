@@ -19,6 +19,10 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <script
+            src="//code.tidio.co/8idttcw6wqxjy9liqinkjtmhgiupkqvr.js"
+            async
+          ></script>
         </body>
       </Html>
     );
