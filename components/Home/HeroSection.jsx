@@ -23,10 +23,12 @@ const HeroSection = () => {
         <div className="flex flex-col">
           <div className="flex flex-col relative">
             <big className="section-title">web3 react developer</big>
-            <h1 className="my-5">Together, we decentralize</h1>
+            <h1 className="my-5">
+              Make your dream dApp <u className="underline-main">come true</u>
+            </h1>
             <p className="text-light">
-              Money is not my priority. Only open to building useful, impactful,
-              or world-changing projects, preferably on web 3.0
+              From idea to product. With passion and expertise. By one of the
+              best web3 engineers in Malaysia.
             </p>
             <div className="mt-8 flex items-center">
               <a href="#projects" className="button-main">
@@ -73,7 +75,12 @@ const HeroSection = () => {
             <div className="flex items-center pl-9">
               <h2 className="font-default">4.9</h2>
               <div className="text-light ml-4 flex items-center">
-                <FontAwesomeIcon icon={faStar} className="w-3 mr-1" />
+                <FontAwesomeIcon
+                  icon={faStar}
+                  style={{ color: "rgb(255, 175, 43)" }}
+                  className="w-3 mr-1"
+                />
+
                 <small className="font-semibold">AVG RATING</small>
               </div>
             </div>
@@ -90,7 +97,7 @@ const HeroSection = () => {
                 layout="fill"
                 quality={60}
               />
-              <div className="absolute h-full w-full opacity-20 bg-main rounded-2xl"></div>
+              <div className="absolute h-full w-full opacity-10 bg-main rounded-2xl"></div>
             </div>
             <div className="px-2 flex justify-between items-center">
               <div>
