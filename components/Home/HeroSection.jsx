@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "../../styles/pages/home.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload, faStar } from "@fortawesome/free-solid-svg-icons";
+import { faCommentAlt, faStar } from "@fortawesome/free-solid-svg-icons";
 
 const HeroSection = () => {
   const techs = [
@@ -35,10 +35,17 @@ const HeroSection = () => {
                 View Projects
               </a>
               <div className="ml-7 flex items-center underline hoverOpacity">
-                <FontAwesomeIcon icon={faDownload} className="w-3 mr-1" />
-                <a href="/docs/resume.pdf" target="_blank">
-                  <big>Resume</big>
-                </a>
+                <FontAwesomeIcon icon={faCommentAlt} className="w-3 mr-1" />
+                <span
+                  onClick={() => {
+                    if (window?.tidioChatApi) {
+                      window.tidioChatApi.show();
+                      window.tidioChatApi.open();
+                    }
+                  }}
+                >
+                  <big>Chat Now</big>
+                </span>
               </div>
             </div>
 
