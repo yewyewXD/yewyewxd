@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import ValueSection from "../components/Home/ValueSection";
 import HeroSection from "../components/Home/HeroSection";
 import ReviewSection from "../components/Home/ReviewSection";
 import ProjectSection from "../components/Home/ProjectSection";
@@ -15,7 +14,6 @@ const HomePage = ({ openCalendly }) => {
       </Head>
 
       <HeroSection />
-      <ValueSection />
       <ReviewSection />
       <ProjectSection />
       <CTASection openCalendly={openCalendly} />

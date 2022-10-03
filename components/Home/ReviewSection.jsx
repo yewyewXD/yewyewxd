@@ -24,10 +24,8 @@ const ReviewSection = () => {
         <div className="col-span-7 pl-5 relative">
           <Carousel
             slidesToShow={1}
-            autoplay
             animation="fade"
-            speed={2500}
-            autoplayInterval={5000}
+            speed={1500}
             renderCenterLeftControls={({ previousSlide, currentSlide }) => (
               <div
                 className={`w-8 h-8 all-center hoverOpacity bg-main ${
