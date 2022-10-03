@@ -21,6 +21,7 @@ class MyDocument extends Document {
           <NextScript />
           <script
             src="//code.tidio.co/8idttcw6wqxjy9liqinkjtmhgiupkqvr.js"
+            defer
             async
           ></script>
         </body>
