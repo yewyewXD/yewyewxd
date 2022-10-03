@@ -2,13 +2,15 @@ import React from "react";
 import navItems from "../json/navItems.json";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown, faComment } from "@fortawesome/free-solid-svg-icons";
 
 const AppHeader = ({ openCalendly }) => {
   return (
     <header className="mt-4">
       <div className="container flex justify-between items-center">
-        <div className="section-title">yewyewXD</div>
+        <Link href="/" passHref>
+          <div className="section-title hoverOpacity">yewyewXD</div>
+        </Link>
 
         <nav className="flex items-center font-medium">
           {navItems.map((navItem) => (
@@ -40,12 +42,19 @@ const AppHeader = ({ openCalendly }) => {
             </div>
           ))}
 
-          <button
-            className="NavCTA flex items-center ml-5"
-            onClick={openCalendly}
-          >
-            <FontAwesomeIcon icon={faPhone} className="w-4" />
-            <span className="leading-tight ml-2">Schedule</span>
+          <button className="NavCTA flex items-center ml-5">
+            <FontAwesomeIcon icon={faComment} className="w-4" />
+            <span
+              onClick={() => {
+                if (window?.tidioChatApi) {
+                  window.tidioChatApi.show();
+                  window.tidioChatApi.open();
+                }
+              }}
+              className="leading-tight ml-2"
+            >
+              {"Let's Chat"}
+            </span>
           </button>
         </nav>
       </div>

@@ -29,7 +29,15 @@ const CTASection = ({ openCalendly }) => {
             collaboration!
           </div>
 
-          <button className="button-main" onClick={openCalendly}>
+          <button
+            className="button-main"
+            onClick={() => {
+              if (window?.tidioChatApi) {
+                window.tidioChatApi.show();
+                window.tidioChatApi.open();
+              }
+            }}
+          >
             Get a free consultation
           </button>
         </div>
