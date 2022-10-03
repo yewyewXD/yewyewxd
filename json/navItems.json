@@ -1,30 +1,16 @@
 [
   {
-    "name": "Home",
-    "link": "/",
-    "subLinks": [
-      {
-        "name": "Why choose me",
-        "link": "/#values"
-      },
-      {
-        "name": "Testimonial",
-        "link": "/#reviews"
-      },
-      {
-        "name": "Proud creations",
-        "link": "/#projects"
-      }
-    ]
+    "name": "Reviews",
+    "link": "/#reviews"
   },
 
   {
-    "name": "Discover Me",
-    "link": "/about"
+    "name": "Projects",
+    "link": "/#projects"
   },
 
   {
-    "name": "Contact",
-    "link": "/contact"
+    "name": "FAQs",
+    "link": "/faq"
   }
 ]
