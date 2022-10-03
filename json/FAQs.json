@@ -1,43 +1,15 @@
 [
   {
     "question": "What's your rate & availability?",
-    "answer": "20 hours & $600 per week. $30 per hour."
+    "answer": "10h per week. $30 per hour."
   },
   {
     "question": "How many years of exp. do you have?",
-    "answer": "3 years in web dev and 2 years in blockchain dev."
+    "answer": "3 years in Web Dev. 2 years in Blockchain Dev."
   },
   {
     "question": "Which blockchains are you familiar with?",
-    "answer": "Any EVM-compatible chain. Most familiar with ETH, BSC, MATIC, AVAX, FANTOM, and CRONOS."
-  },
-  {
-    "question": "How much is your previous job's salary?",
-    "answer": "2,000 EUR per month."
-  },
-  {
-    "question": "What is your career goals?",
-    "answer": "To network with people and to polish up my blockchain skills."
-  },
-  {
-    "question": "Where do you see yourself in 5-10 years?",
-    "answer": "Being one of the leaders to decentralize all the 'big powers' in the world."
-  },
-  {
-    "question": "What's your biggest ambition?",
-    "answer": "Decentralize corrupted governments with blockchain."
-  },
-  {
-    "question": "How do your coworkers describe you?",
-    "answer": "So good in programming, good vibe, funny, easy-going, open-minded, supportive, kind, and hardworking."
-  },
-  {
-    "question": "What's your hobby outside of work?",
-    "answer": "To talk about techs. Explaining complex blockchain theory to whoever is interested in the web3.0 space."
-  },
-  {
-    "question": "Any personal project you're working on?",
-    "answer": "ChainEntities.io, a metaverse project that will show the world that we don't need a huge & centralized government, and that every single one of us can own the same & fair governance power."
+    "answer": "Best in ETH, BSC, MATIC. Familiar with AVAX, FANTOM, CRONOS, AURORA."
   },
   {
     "question": "How old are you?",
@@ -45,7 +17,7 @@
   },
   {
     "question": "Where do you live now?",
-    "answer": "In Malaysia, Selangor (South Western) area."
+    "answer": "In Rawang, Selangor."
   },
   {
     "question": "How do I call you?",

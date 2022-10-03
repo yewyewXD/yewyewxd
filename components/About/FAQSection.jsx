@@ -7,7 +7,7 @@ import FAQs from "../../json/FAQs.json";
 const Collapsible = ({ question, answer }) => {
   const [open, setOpen] = useState(false);
   return (
-    <Root className="mt-10 w-5/12" open={open} onOpenChange={setOpen}>
+    <Root className="mt-10 px-7" open={open} onOpenChange={setOpen}>
       <Trigger
         asChild
         className={`cursor-pointer ${
@@ -49,14 +49,25 @@ const FAQSection = () => {
           </div>
         </div>
 
-        <div className="flex justify-between flex-wrap mt-4">
-          {FAQs.map((faq) => (
-            <Collapsible
-              key={faq.answer}
-              question={faq.question}
-              answer={faq.answer}
-            />
-          ))}
+        <div className="grid grid-cols-2 mt-4">
+          <div>
+            {FAQs.slice(0, 3).map((faq) => (
+              <Collapsible
+                key={faq.answer}
+                question={faq.question}
+                answer={faq.answer}
+              />
+            ))}
+          </div>
+          <div>
+            {FAQs.slice(3, 6).map((faq) => (
+              <Collapsible
+                key={faq.answer}
+                question={faq.question}
+                answer={faq.answer}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
