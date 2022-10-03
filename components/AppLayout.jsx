@@ -6,7 +6,7 @@ import React, {
   useRef,
 } from "react";
 import Head from "next/head";
-import { PopupModal } from "react-calendly";
+// import { PopupModal } from "react-calendly";
 import AppHeader from "./AppHeader";
 import AppFooter from "./AppFooter";
 
@@ -42,14 +42,14 @@ const AppLayout = ({ children }) => {
         }`}
         ref={modalRef}
       ></div>
-      <PopupModal
+      {/* <PopupModal
         url="https://calendly.com/yewyewxd"
         open={isCalendlyOpened}
         onModalClose={() => {
           setIsCalendlyOpened(false);
         }}
         rootElement={modalRef.current}
-      />
+      /> */}
 
       <main>{childrenWithProps}</main>
 
