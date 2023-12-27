@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import PrimaryBtn from './components/PrimaryBtn'
@@ -25,8 +26,11 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="container">
-          <div className="p-16 bg-gray-200 rounded-3xl">
+        <div className="max-w-[75%] mx-auto">
+          <Link
+            href="/spuun"
+            className="block p-16 bg-gray-200 rounded-3xl mb-24 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl hover:bg-gray-100"
+          >
             <div className="text-4xl font-bold mb-1 tracking-tight leading-snug">
               Spuun
             </div>
@@ -39,7 +43,25 @@ export default function Home() {
             <button className="text-lg py-4 px-6 text-darkGrey rounded-xl bg-white">
               Read the Case Study
             </button>
-          </div>
+          </Link>
+
+          <Link
+            href="/tcmfinder"
+            className="block p-16 bg-gray-200 rounded-3xl mb-24 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl hover:bg-gray-100"
+          >
+            <div className="text-4xl font-bold mb-1 tracking-tight leading-snug">
+              TCMFinder
+            </div>
+            <div className="text-sm text-darkGrey mb-3 font-semibold tracking-widest">
+              FULLSTACK DEVELOPER<span className="mx-2">·</span>2022
+            </div>
+            <div className="text-lg text-darkGrey mb-6">
+              Making something super cool in Thailand.
+            </div>
+            <button className="text-lg py-4 px-6 text-darkGrey rounded-xl bg-white">
+              Read the Case Study
+            </button>
+          </Link>
         </div>
       </section>
 
