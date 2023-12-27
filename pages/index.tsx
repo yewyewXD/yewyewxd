@@ -22,6 +22,25 @@ export default function Home() {
           <PrimaryBtn>See Projects</PrimaryBtn>
         </div>
       </section>
+
+      <section>
+        <div className="container">
+          <div className="p-16 bg-gray-200 rounded-3xl">
+            <div className="text-4xl font-bold mb-1 tracking-tight leading-snug">
+              Spuun
+            </div>
+            <div className="text-sm text-darkGrey mb-3 font-semibold tracking-widest">
+              FULLSTACK & MOBILE DEVELOPER<span className="mx-2">·</span>2022
+            </div>
+            <div className="text-lg text-darkGrey mb-6">
+              Making something super cool in Thailand.
+            </div>
+            <button className="text-lg py-4 px-6 text-darkGrey rounded-xl bg-white">
+              Read the Case Study
+            </button>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
