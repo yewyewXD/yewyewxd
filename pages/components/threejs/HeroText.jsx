@@ -11,7 +11,8 @@ import * as THREE from 'three'
 const material = new THREE.MeshMatcapMaterial()
 
 const HeroText = () => {
-  const [matcapTexture] = useMatcapTexture('313131_BBBBBB_878787_A3A4A4', 256)
+  // alt: 313131_BBBBBB_878787_A3A4A4
+  const [matcapTexture] = useMatcapTexture('584F3A_BEC3BD_C5A57D_A39073', 256)
 
   useEffect(() => {
     matcapTexture.colorSpace = THREE.SRGBColorSpace
@@ -19,7 +20,7 @@ const HeroText = () => {
 
     material.matcap = matcapTexture
     material.needsUpdate = true
-  }, [])
+  }, [matcapTexture])
 
   return (
     <>

@@ -14,7 +14,7 @@ export default function Home() {
         </Canvas>
 
         <div className="container flex flex-col justify-center items-center text-center absolute">
-          <p className="text-lg max-w-[500px] mb-6 mt-32 leading-normal">
+          <p className="text-lg max-w-[500px] mb-6 mt-32 leading-normal text-darkGrey">
             {
               "I'm a React full-stack developer with 4 years of work experience."
             }
