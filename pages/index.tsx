@@ -1,3 +1,4 @@
+import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import PrimaryBtn from './components/PrimaryBtn'
 import Canvas from './components/threejs/Canvas'
@@ -41,6 +42,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   )
 }
