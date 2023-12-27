@@ -7,6 +7,7 @@ const Canvas = ({ children }) => {
       style={{
         height: '100vh',
         width: '100%',
+        zIndex: '10',
       }}
       camera={{
         fov: 45,

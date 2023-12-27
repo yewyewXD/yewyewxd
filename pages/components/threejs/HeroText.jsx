@@ -11,7 +11,7 @@ import * as THREE from 'three'
 const material = new THREE.MeshMatcapMaterial()
 
 const HeroText = () => {
-  const [matcapTexture] = useMatcapTexture('7B5254_E9DCC7_B19986_C8AC91', 256)
+  const [matcapTexture] = useMatcapTexture('313131_BBBBBB_878787_A3A4A4', 256)
 
   useEffect(() => {
     matcapTexture.colorSpace = THREE.SRGBColorSpace
@@ -25,8 +25,8 @@ const HeroText = () => {
     <>
       <OrbitControls enableZoom={false} makeDefault />
 
-      <Center>
-        <Float speed={5} floatIntensity={2}>
+      <Center position={[0, 0.65, 0]}>
+        <Float speed={3} floatIntensity={1}>
           <Text3D
             material={material}
             font="./fonts/inter_semibold.json"
