@@ -24,11 +24,3 @@ body {
   font-size: 70px;
   font-weight: bold;
 }
-
-.myShadow {
-  box-shadow: 0 8px 48px rgba(0, 0, 0, 0.2);
-}
-
-.navShadow {
-  box-shadow: 0 9px 30px rgba(0, 0, 0, 0.1);
-}

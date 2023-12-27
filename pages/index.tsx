@@ -29,7 +29,7 @@ export default function Home() {
         <div className="max-w-[75%] mx-auto">
           <Link
             href="/spuun"
-            className="block p-16 bg-gray-200 rounded-3xl mb-24 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl hover:bg-gray-100"
+            className="block p-16 bg-gray-200 rounded-3xl mb-24 transition-all duration-300 md:hover:scale-105 shadow-lg md:hover:shadow-xl hover:bg-gray-100"
           >
             <div className="text-4xl font-bold mb-1 tracking-tight leading-snug">
               Spuun
@@ -47,7 +47,7 @@ export default function Home() {
 
           <Link
             href="/tcmfinder"
-            className="block p-16 bg-gray-200 rounded-3xl mb-24 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl hover:bg-gray-100"
+            className="block p-16 bg-gray-200 rounded-3xl mb-24 transition-all duration-300 md:hover:scale-105 shadow-lg md:hover:shadow-xl hover:bg-gray-100"
           >
             <div className="text-4xl font-bold mb-1 tracking-tight leading-snug">
               TCMFinder

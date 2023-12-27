@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="container py-7 flex justify-end items-center">
         <div className="relative flex justify-end">
           <button
-            className="h-[60px] w-[60px] bg-white myShadow flex justify-center items-center rounded-full flex-shrink-0 relative transition-transform duration-300 md:hover:scale-105"
+            className="h-[60px] w-[60px] bg-white flex justify-center items-center rounded-full flex-shrink-0 relative transition-all duration-300 md:hover:scale-105 shadow-lg md:hover:shadow-xl"
             onClick={handleShowMenu}
           >
             <Image
