@@ -2,7 +2,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
 
-const Navbar = () => {
+const circleButtonClass =
+  'h-[60px] w-[60px] bg-white flex justify-center items-center rounded-full flex-shrink-0 relative transition-all duration-300 md:hover:scale-105 shadow-lg md:hover:shadow-xl select-none'
+
+const Navbar = ({ hasBack }: { hasBack?: boolean }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   function handleShowMenu() {
@@ -11,12 +14,25 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50">
-      <div className="container py-7 flex justify-end items-center">
+      <div
+        className={`container py-7 flex items-center ${
+          hasBack ? 'justify-between' : 'justify-end'
+        }`}
+      >
+        {hasBack && (
+          <Link href="/" className={circleButtonClass} onClick={handleShowMenu}>
+            <Image
+              height={20}
+              width={20}
+              src="/images/icon_arrowleft.svg"
+              alt="Back button"
+              className="h-auto"
+            />
+          </Link>
+        )}
+
         <div className="relative flex justify-end">
-          <button
-            className="h-[60px] w-[60px] bg-white flex justify-center items-center rounded-full flex-shrink-0 relative transition-all duration-300 md:hover:scale-105 shadow-lg md:hover:shadow-xl select-none"
-            onClick={handleShowMenu}
-          >
+          <button className={circleButtonClass} onClick={handleShowMenu}>
             <Image
               height={20}
               width={20}
