@@ -22,7 +22,7 @@ const Navbar = () => {
               width={20}
               src="/images/icon_close.svg"
               alt="Close button"
-              className={`absolute ${
+              className={`h-auto absolute ${
                 isMenuOpen
                   ? 'opacity-100 transition-opacity duration-300'
                   : 'opacity-0'
@@ -33,7 +33,7 @@ const Navbar = () => {
               width={20}
               src="/images/icon_menu.svg"
               alt="Burger menu"
-              className={`absolute ${
+              className={`h-auto absolute ${
                 isMenuOpen
                   ? 'opacity-0'
                   : 'opacity-100 transition-opacity duration-300'

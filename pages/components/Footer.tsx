@@ -13,6 +13,7 @@ const Footer = () => {
             className="flex justify-center items-center mx-4 w-11 h-11 rounded-lg bg-white transition-all duration-300 md:hover:scale-105 shadow-lg md:hover:shadow-xl"
           >
             <Image
+              className="h-auto"
               src="/images/icon_github.svg"
               alt="Github"
               height={32}
@@ -26,6 +27,7 @@ const Footer = () => {
             className="flex justify-center items-center mx-4 w-11 h-11 rounded-lg bg-white transition-all duration-300 md:hover:scale-105 shadow-lg md:hover:shadow-xl"
           >
             <Image
+              className="h-auto"
               src="/images/icon_linkedin.svg"
               alt="LinkedIn"
               height={32}
