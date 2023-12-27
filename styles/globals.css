@@ -4,6 +4,11 @@
 
 :root {
   --grey-text: #5e5e63;
+  --primary: #e9d78e;
+}
+
+body {
+  background-color: #f6f6f6;
 }
 
 .container {
@@ -18,4 +23,8 @@
   background-clip: text;
   font-size: 70px;
   font-weight: bold;
+}
+
+.myShadow {
+  box-shadow: 0 8px 48px rgba(0, 0, 0, 0.2);
 }
