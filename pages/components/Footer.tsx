@@ -4,13 +4,13 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-200">
+    <footer className="bg-secondary">
       <div className="container pt-12 pb-11">
         <div className="mb-8 flex items-center justify-center">
           <Link
             href="https://github.com/yewyewxd"
             target="_blank"
-            className="flex justify-center items-center mx-4 w-11 h-11 rounded-lg hover:bg-white"
+            className="flex justify-center items-center mx-4 w-11 h-11 rounded-lg bg-white transition-all duration-300 md:hover:scale-105 shadow-lg md:hover:shadow-xl"
           >
             <Image
               src="/images/icon_github.svg"
@@ -23,7 +23,7 @@ const Footer = () => {
           <Link
             href="https://www.linkedin.com/in/yewyewxd"
             target="_blank"
-            className="flex justify-center items-center mx-4 w-11 h-11 rounded-lg hover:bg-white"
+            className="flex justify-center items-center mx-4 w-11 h-11 rounded-lg bg-white transition-all duration-300 md:hover:scale-105 shadow-lg md:hover:shadow-xl"
           >
             <Image
               src="/images/icon_linkedin.svg"
@@ -34,7 +34,7 @@ const Footer = () => {
           </Link>
         </div>
 
-        <div className="text-sm py-3 px-2 text-darkGrey text-center">
+        <div className="text-sm py-3 px-2 text-gray-700 text-center">
           Copyright © 2023 Kang Wei. All rights reserved.
         </div>
       </div>

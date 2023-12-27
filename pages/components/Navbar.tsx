@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="container py-7 flex justify-end items-center">
         <div className="relative flex justify-end">
           <button
-            className="h-[60px] w-[60px] bg-white flex justify-center items-center rounded-full flex-shrink-0 relative transition-all duration-300 md:hover:scale-105 shadow-lg md:hover:shadow-xl"
+            className="h-[60px] w-[60px] bg-white flex justify-center items-center rounded-full flex-shrink-0 relative transition-all duration-300 md:hover:scale-105 shadow-lg md:hover:shadow-xl select-none"
             onClick={handleShowMenu}
           >
             <Image
@@ -42,7 +42,7 @@ const Navbar = () => {
           </button>
 
           <div
-            className={`bg-white navShadow top-[72px] absolute p-2 rounded-xl w-64 text-lg transition-all duration-300 ${
+            className={`bg-white shadow-lg top-[72px] absolute p-2 rounded-xl w-64 text-lg transition-all duration-300 ${
               isMenuOpen
                 ? 'scale-100 opacity-100'
                 : 'scale-0 translate-x-24 -translate-y-6 opacity-0'
