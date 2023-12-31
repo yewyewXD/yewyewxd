@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --grey-text: #5e5e63;
-  --primary: #e9d78e;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -17,6 +12,12 @@ body {
 
 .container {
   margin: 0 auto;
+  @media (min-width: 1280px) {
+    max-width: 80%;
+  }
+  @media (min-width: 1536px) {
+    max-width: 70%;
+  }
 }
 
 .gradientText {
