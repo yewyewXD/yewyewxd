@@ -37,7 +37,7 @@ export default function Home() {
               Spuun
             </div>
             <div className="text-sm text-gray-700 mb-3 font-semibold tracking-widest">
-              FULLSTACK & MOBILE DEVELOPER<span className="mx-2">·</span>2022
+              FULLSTACK & MOBILE DEVELOPER<span className="mx-2">•</span>2022
             </div>
             <div className="text-lg text-gray-700 mb-6">
               Making something super cool in Thailand.
@@ -55,7 +55,7 @@ export default function Home() {
               TCMFinder
             </div>
             <div className="text-sm text-gray-700 mb-3 font-semibold tracking-widest">
-              FULLSTACK DEVELOPER<span className="mx-2">·</span>2022
+              FULLSTACK DEVELOPER<span className="mx-2">•</span>2022
             </div>
             <div className="text-lg text-gray-700 mb-6">
               Making something super cool in Thailand.
