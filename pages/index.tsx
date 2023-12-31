@@ -1,9 +1,9 @@
 import Link from 'next/link'
-import Footer from './components/Footer'
-import Navbar from './components/Navbar'
-import PrimaryBtn from './components/PrimaryBtn'
-import Canvas from './components/threejs/Canvas'
-import HeroText from './components/threejs/HeroText'
+import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
+import Canvas from '@/components/threejs/Canvas'
+import HeroText from '@/components/threejs/HeroText'
+import { primaryButton } from '@/constants/className'
 
 export default function Home() {
   return (
@@ -21,11 +21,13 @@ export default function Home() {
               "I'm a React full-stack developer with 4 years of work experience."
             }
           </p>
-          <PrimaryBtn>See Projects</PrimaryBtn>
+          <Link className={primaryButton} href="#projects">
+            See Projects
+          </Link>
         </div>
       </section>
 
-      <section>
+      <section id="projects">
         <div className="max-w-[75%] mx-auto">
           <Link
             href="/spuun"
