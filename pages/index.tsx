@@ -28,10 +28,10 @@ export default function Home() {
       </section>
 
       <section id="projects">
-        <div className="max-w-[75%] mx-auto">
+        <div className="flex flex-col justify-center items-center">
           <Link
             href="/spuun"
-            className="block p-16 bg-secondary rounded-3xl mb-24 transition-all duration-300 md:hover:scale-105 shadow-lg md:hover:shadow-xl hover:bg-gray-100"
+            className="lg:w-[900px] lg:h-[440px] block p-16 bg-secondary rounded-3xl mb-24 transition-all duration-300 md:hover:scale-105 md:hover:shadow-lg hover:bg-gray-100"
           >
             <div className="text-4xl font-bold mb-1 tracking-tight leading-snug">
               Spuun
@@ -49,7 +49,7 @@ export default function Home() {
 
           <Link
             href="/tcmfinder"
-            className="block p-16 bg-secondary rounded-3xl mb-24 transition-all duration-300 md:hover:scale-105 shadow-lg md:hover:shadow-xl hover:bg-gray-100"
+            className="lg:w-[900px] lg:h-[440px] block p-16 bg-secondary rounded-3xl mb-24 transition-all duration-300 md:hover:scale-105 md:hover:shadow-lg hover:bg-gray-100"
           >
             <div className="text-4xl font-bold mb-1 tracking-tight leading-snug">
               TCMFinder
