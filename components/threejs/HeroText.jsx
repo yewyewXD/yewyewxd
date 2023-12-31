@@ -20,7 +20,8 @@ const HeroText = () => {
 
     material.matcap = matcapTexture
     material.needsUpdate = true
-  }, [matcapTexture])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   return (
     <>
@@ -30,8 +31,8 @@ const HeroText = () => {
         <Float speed={3} floatIntensity={1}>
           <Text3D
             material={material}
-            font="./fonts/inter_semibold.json"
-            size={0.45}
+            font="/fonts/inter_semibold.json"
+            size={0.4}
             height={0.2}
             curveSegments={12}
             bevelEnabled

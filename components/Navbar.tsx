@@ -4,6 +4,10 @@ import React, { useState } from 'react'
 
 const circleButtonClass =
   'h-[60px] w-[60px] bg-white flex justify-center items-center rounded-full flex-shrink-0 relative transition-all duration-300 md:hover:scale-105 shadow-lg md:hover:shadow-xl select-none'
+const circleButtonSizes = {
+  height: 20,
+  width: 20,
+}
 
 const Navbar = ({ hasBack }: { hasBack?: boolean }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -22,8 +26,7 @@ const Navbar = ({ hasBack }: { hasBack?: boolean }) => {
         {hasBack && (
           <Link href="/" className={circleButtonClass} onClick={handleShowMenu}>
             <Image
-              height={20}
-              width={20}
+              {...circleButtonSizes}
               src="/images/icon_arrowleft.svg"
               alt="Back button"
               className="h-auto"
@@ -34,8 +37,7 @@ const Navbar = ({ hasBack }: { hasBack?: boolean }) => {
         <div className="relative flex justify-end">
           <button className={circleButtonClass} onClick={handleShowMenu}>
             <Image
-              height={20}
-              width={20}
+              {...circleButtonSizes}
               src="/images/icon_close.svg"
               alt="Close button"
               className={`h-auto absolute ${
@@ -45,8 +47,7 @@ const Navbar = ({ hasBack }: { hasBack?: boolean }) => {
               }`}
             />
             <Image
-              height={20}
-              width={20}
+              {...circleButtonSizes}
               src="/images/icon_menu.svg"
               alt="Burger menu"
               className={`h-auto absolute ${

@@ -7,6 +7,10 @@
   --primary: #e9d78e;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: ivory;
 }

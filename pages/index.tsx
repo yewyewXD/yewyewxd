@@ -10,7 +10,7 @@ export default function Home() {
     <div>
       <Navbar />
 
-      <section className="h-screen flex flex-col items-center justify-center">
+      <section className="xl:h-[80vh] h-screen flex flex-col items-center justify-center">
         <Canvas>
           <HeroText />
         </Canvas>
