@@ -17,9 +17,7 @@ export default function Home() {
 
         <div className="container flex flex-col justify-center items-center text-center absolute">
           <p className="text-lg max-w-[500px] mb-6 mt-32 leading-normal text-gray-700 pointer-events-none">
-            {
-              "I'm a React full-stack developer with 4 years of work experience."
-            }
+            {'NextJS Fullstack Developer with 4 Years of Experience.'}
           </p>
           <Link className={primaryButton} href="#projects">
             See Projects

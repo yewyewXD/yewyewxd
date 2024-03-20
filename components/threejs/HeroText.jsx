@@ -41,7 +41,7 @@ const HeroText = () => {
             bevelOffset={0}
             bevelSegments={5}
           >
-            {"Hi, I'm Kang Wei"}
+            {"Hi, I'm Kang"}
           </Text3D>
         </Float>
       </Center>
