@@ -3,7 +3,7 @@ import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import Canvas from '@/components/threejs/Canvas'
 import HeroText from '@/components/threejs/HeroText'
-import { primaryButton } from '@/constants/className'
+import { ArrowDown } from '@/components/Icons'
 
 export default function Home() {
   return (
@@ -16,11 +16,16 @@ export default function Home() {
         </Canvas>
 
         <div className="container flex flex-col justify-center items-center text-center absolute">
-          <p className="text-lg max-w-[500px] mb-6 mt-32 leading-normal text-gray-700 pointer-events-none">
+          <p className="text-lg max-w-[500px] mb-12 mt-32 leading-normal text-default pointer-events-none px-3">
             {'NextJS Fullstack Developer with 4 Years of Experience.'}
           </p>
-          <Link className={primaryButton} href="#projects">
-            See Projects
+
+          <Link
+            className="flex flex-col items-center gap-1 transition-opacity duration-200 hover:opacity-60 cursor-pointer z-50 text-default"
+            href="#projects"
+          >
+            <span>See Projects</span>
+            <ArrowDown className="w-4 h-4" />
           </Link>
         </div>
       </section>
