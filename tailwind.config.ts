@@ -8,16 +8,20 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      textColor: {
+        default: '#5e5e63',
+        dot: '#bdbdc5',
+      },
+      backgroundColor: {
+        default: '#f6f6f6',
+        card: '#eceff1',
+      },
       colors: {
         main: '#FFFFF0',
         primary: '#e9d78e',
         secondary: '#F3EDC8',
         lightGrey: '#f6f6f6',
-      },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        shadow: '#e6ebef',
       },
     },
   },
