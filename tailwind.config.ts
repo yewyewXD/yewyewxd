@@ -12,6 +12,9 @@ const config: Config = {
         default: '#5e5e63',
         dot: '#bdbdc5',
         footer: '#707072',
+        contentDark: '#323235',
+        contentLight: '#5e5e63',
+        contentLighter: '#75757a',
       },
       backgroundColor: {
         default: '#f6f6f6',

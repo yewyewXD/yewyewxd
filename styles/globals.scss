@@ -12,11 +12,12 @@ body {
 
 .container {
   margin: 0 auto;
+  max-width: 85%;
   @media (min-width: 1280px) {
     max-width: 80%;
   }
   @media (min-width: 1536px) {
-    max-width: 70%;
+    max-width: 1000px;
   }
 }
 
