@@ -35,13 +35,13 @@ export default function Home() {
         <div className="flex flex-col justify-center items-center">
           {/* Project 1 */}
           <Link
-            href="/spuun"
+            href="/adonis-map"
             className="lg:w-[900px] flex justify-between overflow-hidden bg-card rounded-3xl mb-24 transition-all duration-300 md:hover:scale-[1.02] md:hover:shadow-lg shadow-shadow hover:bg-default"
           >
             <div className="p-16 pr-0">
               <div className="mb-3">
                 <Image
-                  src="/images/projects/skoolmap_logo.png"
+                  src="/images/projects/map_logo.png"
                   alt="Logo of Skool Map"
                   height={32}
                   width={32}
@@ -68,7 +68,7 @@ export default function Home() {
                 width={480}
                 height={400}
                 sizes="(max-width: 479px) 100vw, (max-width: 767px) 83vw, (max-width: 991px) 87vw, 480px"
-                src="/images/projects/skoolmap_cover.png"
+                src="/images/projects/map_cover.png"
                 alt="Cover image of Skool Map"
               />
             </div>
@@ -108,7 +108,7 @@ export default function Home() {
                 width={480}
                 height={400}
                 sizes="(max-width: 479px) 100vw, (max-width: 767px) 83vw, (max-width: 991px) 87vw, 480px"
-                src="/images/projects/skoolmap_cover.png"
+                src="/images/projects/map_cover.png"
                 alt="Cover image of Skool Map"
               />
             </div>
