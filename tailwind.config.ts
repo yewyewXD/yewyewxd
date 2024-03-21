@@ -11,10 +11,12 @@ const config: Config = {
       textColor: {
         default: '#5e5e63',
         dot: '#bdbdc5',
+        footer: '#707072',
       },
       backgroundColor: {
         default: '#f6f6f6',
         card: '#eceff1',
+        footer: '#f1f1f1',
       },
       colors: {
         main: '#FFFFF0',
