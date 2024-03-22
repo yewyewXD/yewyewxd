@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const AdonisMapPage = () => {
   return (
@@ -21,9 +22,20 @@ const AdonisMapPage = () => {
         <h1 className="text-5xl font-bold mb-3 leading-snug text-contentDark">
           Adonis Map
         </h1>
-        <div className="text-lg font-medium mb-8 text-contentLight">
-          Adonis School<span className="mx-2">•</span>
-          2024
+        <div className="text-lg font-medium mb-8 text-contentLight flex items-center gap-3">
+          <span>
+            Adonis School<span className="mx-2">•</span>
+            2024
+          </span>
+          <span>-</span>
+          <Link
+            className="underline"
+            href="https://adonis-map.com"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            View Live
+          </Link>
         </div>
 
         <div className="grid grid-cols-2">
@@ -70,7 +82,8 @@ const AdonisMapPage = () => {
         </div>
 
         <Image
-          src="/images/casestudy/map_main.png"
+          className="w-[900px] mx-auto"
+          src="/images/adonis-map/casestudy1.png"
           alt="The Problem"
           width={1200}
           height={883}
@@ -106,21 +119,52 @@ const AdonisMapPage = () => {
             KEY FEATURES
           </h2>
           <h3 className="text-2xl font-semibold mb-3 text-contentDark">
-            1. Automatic Verification
+            Automatic Verification
           </h3>
-          <p className="text-lg text-contentDark">Explain the feature</p>
+          <p className="text-lg text-contentDark ">
+            {
+              "For each entry, the backend visits the user's profile to verify their community membership. Members can finally add their own locations themselves, saving the admin hours of manual entry."
+            }
+          </p>
         </div>
 
-        {/* <Image/> */}
+        <Image
+          className="mx-auto rounded-xl shadow-lg"
+          src="/images/adonis-map/feature1.png"
+          alt=""
+          width={400}
+          height={600}
+        />
 
         <div className="max-w-[600px] mx-auto mt-24 mb-14">
           <h3 className="text-2xl font-semibold mb-3 text-contentDark">
-            2. {"Who's Near Me?"}
+            {"Who's Near Me?"}
           </h3>
-          <p className="text-lg text-contentDark">Explain the feature</p>
+          <p className="text-lg text-contentDark">
+            This is our most beloved feature, enabling users to locate
+            like-minded brothers nearby with just one simple click.
+          </p>
         </div>
 
-        {/* <Image/> */}
+        <div className="w-[600px] h-auto mx-auto">
+          <Image
+            className="rounded-xl shadow-lg"
+            src={'/gif/adonis-map/feature2.gif'}
+            layout={'responsive'}
+            width={900}
+            height={563}
+            alt={`Nearby member feature GIF`}
+            unoptimized={true}
+          />
+        </div>
+
+        <div className="max-w-[600px] mx-auto mt-24 mb-14">
+          <h2 className="font-bold mb-2 text-sm tracking-widest text-contentDark">
+            RESULTS
+          </h2>
+
+          <p className="text-lg text-contentLight">They loved it!</p>
+        </div>
       </div>
 
       <Footer />
