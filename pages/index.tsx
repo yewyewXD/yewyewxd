@@ -76,7 +76,7 @@ export default function Home() {
 
           {/* Project 2 */}
           <Link
-            href="/spuun"
+            href="/hp-gaming"
             className="lg:w-[900px] flex justify-between overflow-hidden bg-card rounded-3xl mb-24 transition-all duration-300 md:hover:scale-105 md:hover:shadow-lg hover:bg-gray-100"
           >
             <div className="p-16 pr-0">
