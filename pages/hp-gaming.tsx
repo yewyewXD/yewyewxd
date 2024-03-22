@@ -34,7 +34,7 @@ const HPGamingPage = () => {
           Mystery Gift
         </h1>
 
-        <div className="text-lg font-medium sm:mb-8 mb-6 text-contentLight flex items-center gap-x-3 flex-wrap">
+        <div className="text-lg font-medium sm:mb-8 mb-6 text-default flex items-center gap-x-3 flex-wrap">
           <span>
             HP Gaming Thailand<span className="mx-2">•</span>
             2023
@@ -99,7 +99,7 @@ const HPGamingPage = () => {
           height={883}
         />
 
-        <div className="max-w-[600px] mx-auto sm:my-16 my-8 sm:text-lg text-contentLight">
+        <div className="max-w-[600px] mx-auto sm:my-16 my-8 sm:text-lg text-default">
           <p className="mb-6">
             Hamza, the creator, subsequently banned posts aimed at finding
             people nearby. While this measure helps maintain high-value content
@@ -125,7 +125,7 @@ const HPGamingPage = () => {
         </div>
 
         <div className="max-w-[600px] mx-auto sm:mt-24 mt-20 mb-14">
-          <h2 className="font-bold mb-2 text-sm tracking-widest text-contentLighter">
+          <h2 className="font-bold mb-2 text-sm tracking-widest text-defaulter">
             KEY FEATURES
           </h2>
           <h3 className="text-2xl font-semibold mb-3 text-contentDark">
@@ -189,7 +189,7 @@ const HPGamingPage = () => {
             RESULTS
           </h2>
 
-          <p className="sm:text-lg text-contentLight">
+          <p className="sm:text-lg text-default">
             The Adonis Map, born out of my frustration as a hobby project, has
             evolved into the official map for Adonis School.{' '}
             <strong>
