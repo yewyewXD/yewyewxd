@@ -6,6 +6,27 @@ import HeroText from '@/components/threejs/HeroText'
 import { ArrowDown } from '@/components/Icons'
 import Image from 'next/image'
 
+const PROJECTS = [
+  {
+    link: '/adonis-map',
+    image: '/images/adonis-map/logo.png',
+    title: 'Adonis Map',
+    role: 'NEXT.JS FULLSTACK',
+    year: '2024',
+    description: 'Unite community members in real life.',
+    coverImage: '/images/adonis-map/front_cover.png',
+  },
+  {
+    link: '/hp-gaming',
+    image: '/images/hp/logo.jpeg',
+    title: 'Mystery Gift',
+    role: 'NEXT.JS FULLSTACK',
+    year: '2023',
+    description: 'Incentivize HP Laptop gamers to buy more.',
+    coverImage: '/images/adonis-map/front_cover.png', // todo: update
+  },
+]
+
 export default function Home() {
   return (
     <div>
@@ -31,88 +52,51 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="projects" className="py-8">
-        <div className="flex flex-col justify-center items-center">
-          {/* Project 1 */}
-          <Link
-            href="/adonis-map"
-            className="lg:w-[900px] flex justify-between overflow-hidden bg-card rounded-3xl mb-24 transition-all duration-300 md:hover:scale-[1.02] md:hover:shadow-lg shadow-shadow hover:bg-default"
-          >
-            <div className="p-16 pr-0">
-              <div className="mb-3">
+      <section id="projects" className="py-8 sm:mb-16 mb-8">
+        <div className="flex flex-col justify-center items-center container sm:gap-24 gap-12">
+          {PROJECTS.map((project) => (
+            <Link
+              key={project.title}
+              href={project.link}
+              className="lg:w-[900px] flex lg:flex-row flex-col justify-between overflow-hidden bg-card rounded-3xl transition-all duration-300 md:hover:scale-[1.02] md:hover:shadow-lg shadow-shadow hover:bg-default"
+            >
+              <div className="lg:p-16 p-8 lg:pr-0 lg:pb-16 sm:pb-0 pb-4">
+                <div className="mb-3">
+                  <Image
+                    className="sm:w-8 sm:h-8 w-6 h-6"
+                    src={project.image}
+                    alt={`Logo of ${project.title}`}
+                    height={32}
+                    width={32}
+                  />
+                </div>
+                <div className="sm:text-4xl text-2xl font-bold mb-1 tracking-tight leading-[140%]">
+                  {project.title}
+                </div>
+                <div className="text-sm text-default mb-3 font-semibold tracking-widest">
+                  {project.role}
+                  <span className="mx-2 text-dot">•</span>
+                  {project.year}
+                </div>
+                <div className="sm:text-lg text-default mb-6">
+                  {project.description}
+                </div>
+                <button className="sm:text-lg sm:py-4 py-3 sm:px-6 px-4 text-default rounded-xl bg-white">
+                  Read the Case Study
+                </button>
+              </div>
+
+              <div className="relative">
                 <Image
-                  src="/images/adonis-map/logo.png"
-                  alt="Logo of Adonis Map"
-                  height={32}
-                  width={32}
+                  width={480}
+                  height={400}
+                  sizes="(max-width: 479px) 100vw, (max-width: 767px) 83vw, (max-width: 991px) 87vw, 480px"
+                  src={project.coverImage}
+                  alt={`Cover image of ${project.title}`}
                 />
               </div>
-              <div className="text-4xl font-bold mb-1 tracking-tight leading-[140%]">
-                Adonis Map
-              </div>
-              <div className="text-sm text-default mb-3 font-semibold tracking-widest">
-                NEXT.JS FULLSTACK DEV
-                <span className="mx-2 text-dot">•</span>
-                2024
-              </div>
-              <div className="text-lg text-default mb-6">
-                Unite community members in real life.
-              </div>
-              <button className="text-lg py-4 px-6 text-default rounded-xl bg-white">
-                Read the Case Study
-              </button>
-            </div>
-
-            <div className="relative">
-              <Image
-                width={480}
-                height={400}
-                sizes="(max-width: 479px) 100vw, (max-width: 767px) 83vw, (max-width: 991px) 87vw, 480px"
-                src="/images/adonis-map/front_cover.png"
-                alt="Cover image of Adonis Map"
-              />
-            </div>
-          </Link>
-
-          {/* Project 2 */}
-          <Link
-            href="/hp-gaming"
-            className="lg:w-[900px] flex justify-between overflow-hidden bg-card rounded-3xl mb-24 transition-all duration-300 md:hover:scale-105 md:hover:shadow-lg hover:bg-gray-100"
-          >
-            <div className="p-16 pr-0">
-              <div className="mb-3">
-                <Image
-                  src="/images/hp/logo.jpeg"
-                  className="rounded-full"
-                  alt="Logo of HP Gaming Thailand"
-                  height={32}
-                  width={32}
-                />
-              </div>
-              <div className="text-4xl font-bold mb-1 tracking-tight leading-[140%]">
-                Mystery Gift
-              </div>
-              <div className="text-sm text-gray-700 mb-3 font-semibold tracking-widest">
-                NEXT.JS FULLSTACK DEV<span className="mx-2">•</span>2023
-              </div>
-              <div className="text-lg text-gray-700 mb-6">
-                Incentivize HP Laptop gamers to buy more.
-              </div>
-              <button className="text-lg py-4 px-6 text-gray-700 rounded-xl bg-white">
-                Read the Case Study
-              </button>
-            </div>
-
-            <div className="relative">
-              <Image
-                width={480}
-                height={400}
-                sizes="(max-width: 479px) 100vw, (max-width: 767px) 83vw, (max-width: 991px) 87vw, 480px"
-                src="/images/adonis-map/front_cover.png"
-                alt="Cover image of Adonis Map"
-              />
-            </div>
-          </Link>
+            </Link>
+          ))}
         </div>
       </section>
 
