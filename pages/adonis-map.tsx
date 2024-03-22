@@ -148,11 +148,9 @@ const AdonisMapPage = () => {
           height={600}
         />
 
-        <div className="max-w-[600px] mx-auto sm:mt-24 mt-20 mb-14">
-          <h3 className="text-2xl font-semibold mb-3 text-contentDark">
-            {"Who's Near Me?"}
-          </h3>
-          <p className="sm:text-lg text-contentDark">
+        <div className="max-w-[600px] mx-auto sm:mt-24 mt-20 mb-14 text-contentDark">
+          <h3 className="text-2xl font-semibold mb-3">{"Who's Near Me?"}</h3>
+          <p className="sm:text-lg">
             This is our most beloved feature, enabling users to locate
             like-minded brothers nearby with just one simple click.
           </p>
@@ -170,11 +168,9 @@ const AdonisMapPage = () => {
           />
         </div>
 
-        <div className="max-w-[600px] mx-auto sm:mt-24 mt-20 mb-14">
-          <h3 className="text-2xl font-semibold mb-3 text-contentDark">
-            Grouped Pins
-          </h3>
-          <p className="sm:text-lg text-contentDark">
+        <div className="max-w-[600px] mx-auto sm:mt-24 mt-20 mb-14 text-contentDark">
+          <h3 className="text-2xl font-semibold mb-3">Grouped Pins</h3>
+          <p className="sm:text-lg">
             The picture on the left shows our experience with Google My Maps,
             where country names were barely visible. The Adonis Map (picture on
             the right) effectively groups pins into expandable clusters,
