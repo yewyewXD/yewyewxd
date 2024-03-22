@@ -10,7 +10,16 @@ const AdonisMapPage = () => {
       <Navbar hasBack />
 
       <div className="container">
-        <div className="h-[600px]">image</div>
+        <div className="pt-28 pb-20">
+          <Image
+            className="w-[800px] mx-auto object-contain rounded-2xl shadow-2xl"
+            src="/images/adonis-map/cover.png"
+            alt="Cover Image of Adonis Map"
+            height={600}
+            width={1000}
+          />
+        </div>
+
         <div className="mb-4">
           <Image
             src="/images/projects/map_logo.png"
@@ -29,7 +38,7 @@ const AdonisMapPage = () => {
           </span>
           <span>-</span>
           <Link
-            className="underline"
+            className="underline text-blue-700 md:hover:opacity-70"
             href="https://adonis-map.com"
             target="_blank"
             rel="noreferrer noopener"
@@ -76,13 +85,13 @@ const AdonisMapPage = () => {
           <h2 className="font-bold mb-2 text-sm tracking-widest">PROBLEM</h2>
           <p className="text-lg">
             The Skool platform, on which we hosted our community, lacks an easy
-            way for people to connect in real life. Consequently, our group feed
-            was flooded with low-quality posts like {`"Anyone from XYZ?"`}
+            way for people to connect in real life. Consequently, our community
+            feed was flooded with low-quality posts like {`"Anyone from XYZ?"`}
           </p>
         </div>
 
         <Image
-          className="w-[900px] mx-auto"
+          className="w-[750px] mx-auto"
           src="/images/adonis-map/casestudy1.png"
           alt="The Problem"
           width={1200}
@@ -91,10 +100,10 @@ const AdonisMapPage = () => {
 
         <div className="max-w-[600px] mx-auto my-16">
           <p className="text-lg text-contentLight mb-6">
-            Hamza, the creator, has banned posts aimed at finding people nearby.
-            While this measure helps maintain high-value content in our
-            community, it also amplifies the challenge for members to organize
-            meetups.
+            Hamza, the creator, subsequently banned posts aimed at finding
+            people nearby. While this measure helps maintain high-value content
+            in our community, it also amplifies the challenge for members to
+            organize meetups.
           </p>
 
           <p className="text-lg text-contentLight">
@@ -159,12 +168,52 @@ const AdonisMapPage = () => {
         </div>
 
         <div className="max-w-[600px] mx-auto mt-24 mb-14">
+          <h3 className="text-2xl font-semibold mb-3 text-contentDark">
+            Grouped Pins
+          </h3>
+          <p className="text-lg text-contentDark">
+            The picture on the left shows our experience with Google My Maps,
+            where country names were barely visible. The Adonis Map (picture on
+            the right) effectively groups pins into expandable clusters,
+            eliminating lag on the map.
+          </p>
+        </div>
+
+        <Image
+          className="mx-auto rounded-xl shadow-lg"
+          src="/images/adonis-map/feature3.png"
+          alt=""
+          width={600}
+          height={400}
+        />
+
+        <div className="max-w-[600px] mx-auto mt-24 mb-14">
           <h2 className="font-bold mb-2 text-sm tracking-widest text-contentDark">
             RESULTS
           </h2>
 
-          <p className="text-lg text-contentLight">They loved it!</p>
+          <p className="text-lg text-contentLight">
+            The Adonis Map, born out of my frustration as a hobby project, has
+            evolved into the official map for Adonis School, with an
+            overwhelmingly positive response from the members!
+          </p>
         </div>
+
+        <Image
+          className="mx-auto rounded-xl shadow-lg mb-8"
+          src="/images/adonis-map/result.png"
+          alt=""
+          width={600}
+          height={400}
+        />
+
+        <Image
+          className="w-[900px] mx-auto mb-8"
+          src="/images/adonis-map/wins.png"
+          alt="The Result"
+          width={1200}
+          height={883}
+        />
       </div>
 
       <Footer />

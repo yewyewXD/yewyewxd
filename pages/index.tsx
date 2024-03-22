@@ -41,14 +41,14 @@ export default function Home() {
             <div className="p-16 pr-0">
               <div className="mb-3">
                 <Image
-                  src="/images/projects/map_logo.png"
-                  alt="Logo of Skool Map"
+                  src="/images/adonis-map/logo.png"
+                  alt="Logo of Adonis Map"
                   height={32}
                   width={32}
                 />
               </div>
               <div className="text-4xl font-bold mb-1 tracking-tight leading-[140%]">
-                Skool Map
+                Adonis Map
               </div>
               <div className="text-sm text-default mb-3 font-semibold tracking-widest">
                 NEXT.JS FULLSTACK DEV
@@ -68,8 +68,8 @@ export default function Home() {
                 width={480}
                 height={400}
                 sizes="(max-width: 479px) 100vw, (max-width: 767px) 83vw, (max-width: 991px) 87vw, 480px"
-                src="/images/projects/map_cover.png"
-                alt="Cover image of Skool Map"
+                src="/images/adonis-map/front_cover.png"
+                alt="Cover image of Adonis Map"
               />
             </div>
           </Link>
@@ -82,7 +82,7 @@ export default function Home() {
             <div className="p-16 pr-0">
               <div className="mb-3">
                 <Image
-                  src="/images/projects/hp_logo.jpeg"
+                  src="/images/hp/logo.jpeg"
                   className="rounded-full"
                   alt="Logo of HP Gaming Thailand"
                   height={32}
@@ -108,8 +108,8 @@ export default function Home() {
                 width={480}
                 height={400}
                 sizes="(max-width: 479px) 100vw, (max-width: 767px) 83vw, (max-width: 991px) 87vw, 480px"
-                src="/images/projects/map_cover.png"
-                alt="Cover image of Skool Map"
+                src="/images/adonis-map/front_cover.png"
+                alt="Cover image of Adonis Map"
               />
             </div>
           </Link>
