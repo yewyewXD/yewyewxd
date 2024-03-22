@@ -33,17 +33,23 @@ export default function Home() {
       <Navbar />
 
       <section className="xl:h-[80vh] h-screen flex flex-col items-center justify-center">
-        <Canvas>
-          <HeroText />
-        </Canvas>
+        <div className="md:block hidden w-full">
+          <Canvas>
+            <HeroText />
+          </Canvas>
+        </div>
 
         <div className="container flex flex-col justify-center items-center text-center absolute">
-          <p className="text-lg max-w-[500px] mb-12 mt-32 leading-normal text-default pointer-events-none px-3">
+          <h1 className="md:hidden text-[50px] mb-3 font-bold gradientText">
+            {"Hi, I'm Kang"}
+          </h1>
+
+          <p className="sm:text-lg max-w-[500px] mb-12 md:mt-32 leading-normal text-default pointer-events-none px-3">
             {'NextJS Fullstack Developer with 4 Years of Experience.'}
           </p>
 
           <Link
-            className="flex flex-col items-center gap-1 transition-opacity duration-200 hover:opacity-60 cursor-pointer z-50 text-default"
+            className="flex flex-col items-center gap-1 transition-opacity duration-200 hover:opacity-60 cursor-pointer z-50 text-default sm:text-lg"
             href="#projects"
           >
             <span>See Projects</span>
