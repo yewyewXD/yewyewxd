@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import { Home, Mail, User } from './Icons'
+import { Home, Mail, Document } from './Icons'
 import { useRouter } from 'next/router'
 import OutsideClickHandler from 'react-outside-click-handler'
 
@@ -19,14 +19,14 @@ const NAV_LINKS = [
     Icon: Home,
   },
   {
-    link: '/about',
-    name: 'About',
-    Icon: User,
-  },
-  {
     link: '/contact',
     name: 'Contact',
     Icon: Mail,
+  },
+  {
+    link: '/resume.pdf',
+    name: 'Resume',
+    Icon: Document,
   },
 ]
 
