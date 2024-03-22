@@ -193,8 +193,11 @@ const AdonisMapPage = () => {
 
           <p className="sm:text-lg text-contentLight">
             The Adonis Map, born out of my frustration as a hobby project, has
-            evolved into the official map for Adonis School, with an
-            overwhelmingly positive response from the members!
+            evolved into the official map for Adonis School.{' '}
+            <strong>
+              At the time of writing, we have helped 482 members find nearby
+              brothers and initiate meetups!
+            </strong>
           </p>
         </div>
 
