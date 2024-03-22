@@ -5,6 +5,7 @@ import Canvas from '@/components/threejs/Canvas'
 import HeroText from '@/components/threejs/HeroText'
 import { ArrowDown } from '@/components/Icons'
 import Image from 'next/image'
+import Head from 'next/head'
 
 const PROJECTS = [
   {
@@ -27,9 +28,27 @@ const PROJECTS = [
   },
 ]
 
+const META_TITLE = "Kang's Portfolio"
+const META_DESCRIPTION =
+  'NextJS Fullstack Developer with 4 Years of Experience.'
+
 export default function Home() {
   return (
     <div>
+      <Head>
+        <title>{META_TITLE}</title>
+        <meta name="description" content={META_DESCRIPTION} />
+        <meta property="og:site_name" content={META_TITLE} />
+        <meta property="og:title" content={META_TITLE} />
+        <meta property="og:description" content={META_DESCRIPTION} />
+        <meta
+          property="og:image"
+          itemProp="image"
+          content={'/images/og_image.png'}
+        />
+        <link rel="icon" href={'/images/favicon.png'} />
+      </Head>
+
       <Navbar />
 
       <section className="xl:h-[80vh] h-screen flex flex-col items-center justify-center">

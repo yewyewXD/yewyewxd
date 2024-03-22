@@ -3,10 +3,29 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Image from 'next/image'
 import Link from 'next/link'
+import Head from 'next/head'
+
+const META_TITLE = "Adonis Map Case Study | Kang's Portfolio"
+const META_DESCRIPTION =
+  'The Adonis Map, born out of my frustration as a hobby project, has evolved into the official map for Adonis School. At the time of writing, we have helped 482 members find nearby brothers and initiate meetups!'
 
 const AdonisMapPage = () => {
   return (
     <div>
+      <Head>
+        <title>{META_TITLE}</title>
+        <meta name="description" content={META_DESCRIPTION} />
+        <meta property="og:site_name" content={"Kang's Portfolio"} />
+        <meta property="og:title" content={META_TITLE} />
+        <meta property="og:description" content={META_DESCRIPTION} />
+        <meta
+          property="og:image"
+          itemProp="image"
+          content={'/images/og_image.png'}
+        />
+        <link rel="icon" href={'/images/favicon.png'} />
+      </Head>
+
       <Navbar hasBack />
 
       <div className="container">
