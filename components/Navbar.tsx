@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import { Home, Mail, User } from './Icons'
 import { useRouter } from 'next/router'
+import OutsideClickHandler from 'react-outside-click-handler'
 
 const circleButtonClass =
   'sm:h-[60px] sm:w-[60px] w-14 h-14 bg-white flex justify-center items-center rounded-full flex-shrink-0 relative transition-all duration-300 md:hover:scale-105 shadow-lg md:hover:shadow-xl select-none'
@@ -44,6 +45,7 @@ const Navbar = ({ hasBack }: { hasBack?: boolean }) => {
           hasBack ? 'justify-between' : 'justify-end'
         }`}
       >
+        {/* Back button */}
         {hasBack && (
           <Link href="/" className={circleButtonClass} onClick={handleShowMenu}>
             <Image
@@ -55,53 +57,62 @@ const Navbar = ({ hasBack }: { hasBack?: boolean }) => {
           </Link>
         )}
 
-        <div className="relative flex justify-end">
-          <button className={circleButtonClass} onClick={handleShowMenu}>
-            <Image
-              {...circleButtonSizes}
-              src="/images/icon_close.svg"
-              alt="Close button"
-              className={`h-auto absolute ${
-                isMenuOpen
-                  ? 'opacity-100 transition-opacity duration-300'
-                  : 'opacity-0'
-              }`}
-            />
-            <Image
-              {...circleButtonSizes}
-              src="/images/icon_menu.svg"
-              alt="Burger menu"
-              className={`h-auto absolute ${
-                isMenuOpen
-                  ? 'opacity-0'
-                  : 'opacity-100 transition-opacity duration-300'
-              }`}
-            />
-          </button>
-
-          <div
-            className={`bg-white shadow-lg top-[72px] absolute p-2 rounded-xl w-64 text-lg transition-all duration-300 ${
-              isMenuOpen
-                ? 'scale-100 opacity-100'
-                : 'scale-0 translate-x-24 -translate-y-6 opacity-0'
-            }`}
-          >
-            {NAV_LINKS.map(({ Icon, link, name }) => (
-              <Link
-                key={link}
-                href={link}
-                className={`p-3 hover:bg-lightGrey rounded-lg flex items-center gap-3 ${
-                  pathname === link
-                    ? 'text-contentDark font-semibold'
-                    : 'text-default'
+        {/* Menu button */}
+        <OutsideClickHandler
+          onOutsideClick={() => {
+            if (isMenuOpen) {
+              setIsMenuOpen(false)
+            }
+          }}
+        >
+          <div className="relative flex justify-end">
+            <button className={circleButtonClass} onClick={handleShowMenu}>
+              <Image
+                {...circleButtonSizes}
+                src="/images/icon_close.svg"
+                alt="Close button"
+                className={`h-auto absolute ${
+                  isMenuOpen
+                    ? 'opacity-100 transition-opacity duration-300'
+                    : 'opacity-0'
                 }`}
-              >
-                <Icon className="w-5 h-5" />
-                {name}
-              </Link>
-            ))}
+              />
+              <Image
+                {...circleButtonSizes}
+                src="/images/icon_menu.svg"
+                alt="Burger menu"
+                className={`h-auto absolute ${
+                  isMenuOpen
+                    ? 'opacity-0'
+                    : 'opacity-100 transition-opacity duration-300'
+                }`}
+              />
+            </button>
+
+            <div
+              className={`bg-white shadow-lg top-[72px] absolute p-2 rounded-xl w-64 text-lg transition-all duration-300 ${
+                isMenuOpen
+                  ? 'scale-100 opacity-100'
+                  : 'scale-0 translate-x-24 -translate-y-6 opacity-0'
+              }`}
+            >
+              {NAV_LINKS.map(({ Icon, link, name }) => (
+                <Link
+                  key={link}
+                  href={link}
+                  className={`p-3 hover:bg-lightGrey rounded-lg flex items-center gap-3 ${
+                    pathname === link
+                      ? 'text-contentDark font-semibold'
+                      : 'text-default'
+                  }`}
+                >
+                  <Icon className="w-5 h-5" />
+                  {name}
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
+        </OutsideClickHandler>
       </div>
     </nav>
   )
