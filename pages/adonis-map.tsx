@@ -78,7 +78,17 @@ const AdonisMapPage = () => {
 
             <div className="flex flex-col gap-2 sm:mb-0 mb-8">
               <h2 className="font-bold text-sm tracking-widest">CREDITS</h2>
-              <p className="">Hamza Ahmed, Community Creator</p>
+              <p className="">
+                <Link
+                  className="md:hover:opacity-70 underline"
+                  href="https://www.youtube.com/@Hamza97"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  Hamza Ahmed
+                </Link>
+                , Community Creator
+              </p>
               <p className="">Danish Ahmed, Quality Assurance</p>
             </div>
           </div>
