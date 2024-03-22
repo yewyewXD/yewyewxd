@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
+import { Home, Mail, User } from './Icons'
+import { useRouter } from 'next/router'
 
 const circleButtonClass =
   'sm:h-[60px] sm:w-[60px] w-14 h-14 bg-white flex justify-center items-center rounded-full flex-shrink-0 relative transition-all duration-300 md:hover:scale-105 shadow-lg md:hover:shadow-xl select-none'
@@ -9,7 +11,26 @@ const circleButtonSizes = {
   width: 18,
 }
 
+const NAV_LINKS = [
+  {
+    link: '/',
+    name: 'Home',
+    Icon: Home,
+  },
+  {
+    link: '/about',
+    name: 'About',
+    Icon: User,
+  },
+  {
+    link: '/contact',
+    name: 'Contact',
+    Icon: Mail,
+  },
+]
+
 const Navbar = ({ hasBack }: { hasBack?: boolean }) => {
+  const { pathname } = useRouter()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   function handleShowMenu() {
@@ -65,13 +86,20 @@ const Navbar = ({ hasBack }: { hasBack?: boolean }) => {
                 : 'scale-0 translate-x-24 -translate-y-6 opacity-0'
             }`}
           >
-            <Link
-              href="/"
-              className="p-3 hover:bg-lightGrey block rounded-lg font-bold"
-            >
-              <span className="mr-4">h</span>
-              Home
-            </Link>
+            {NAV_LINKS.map(({ Icon, link, name }) => (
+              <Link
+                key={link}
+                href={link}
+                className={`p-3 hover:bg-lightGrey rounded-lg flex items-center gap-3 ${
+                  pathname === link
+                    ? 'text-contentDark font-semibold'
+                    : 'text-default'
+                }`}
+              >
+                <Icon className="w-5 h-5" />
+                {name}
+              </Link>
+            ))}
           </div>
         </div>
       </div>

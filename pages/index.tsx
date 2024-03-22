@@ -58,7 +58,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="projects" className="py-8 sm:mb-16 mb-8">
+      <section id="projects" className="py-8 sm:mb-16 mb-4">
         <div className="flex flex-col justify-center items-center container sm:gap-24 gap-12">
           {PROJECTS.map((project) => (
             <Link
