@@ -23,7 +23,7 @@ const AdonisMapPage = () => {
         <div className="sm:mb-4 mb-3">
           <Image
             className="sm:w-8 sm:h-8 w-6 h-6"
-            src="/images/projects/map_logo.png"
+            src="/images/adonis-map/logo.png"
             alt="Logo of Adonis Map"
             height={32}
             width={32}
@@ -55,7 +55,7 @@ const AdonisMapPage = () => {
             The Adonis community is home to many young men focused on
             self-improvement. While numerous friendships are cultivated online,
             members often face challenges in finding nearby brothers to meet up
-            with in real life. This is where the Adonis Map comes to the rescue.
+            with in real life. This is where Adonis Map comes to the rescue.
           </p>
 
           <div className="grid sm:grid-cols-2 text-contentDark lg:mt-0 mt-16">
@@ -76,7 +76,7 @@ const AdonisMapPage = () => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 sm:mb-0 mb-8">
               <h2 className="font-bold text-sm tracking-widest">CREDITS</h2>
               <p className="">Hamza Ahmed, Community Creator</p>
               <p className="">Danish Ahmed, Quality Assurance</p>
