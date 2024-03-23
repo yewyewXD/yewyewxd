@@ -1,24 +1,18 @@
 import React, { useEffect } from 'react'
-import {
-  useMatcapTexture,
-  Center,
-  Text3D,
-  OrbitControls,
-  Float,
-} from '@react-three/drei'
+import { Center, Text3D, OrbitControls, Float } from '@react-three/drei'
+import { useLoader } from '@react-three/fiber'
 import * as THREE from 'three'
 
 const material = new THREE.MeshMatcapMaterial()
 
 const HeroText = () => {
-  // alt: 313131_BBBBBB_878787_A3A4A4
-  const [matcapTexture] = useMatcapTexture('584F3A_BEC3BD_C5A57D_A39073', 256)
+  const texture = useLoader(THREE.TextureLoader, '/matcap_texture.png')
 
   useEffect(() => {
-    matcapTexture.colorSpace = THREE.SRGBColorSpace
-    matcapTexture.needsUpdate = true
+    texture.colorSpace = THREE.SRGBColorSpace
+    texture.needsUpdate = true
 
-    material.matcap = matcapTexture
+    material.matcap = texture
     material.needsUpdate = true
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
