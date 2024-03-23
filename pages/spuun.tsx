@@ -5,10 +5,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Head from 'next/head'
 
-const META_TITLE = "Mystery Gift Case Study | Kang's Portfolio"
+const META_TITLE = "Spuun Case Study | Kang's Portfolio"
 const META_DESCRIPTION = ''
 
-const HPGamingPage = () => {
+const SpuunPage = () => {
   return (
     <div>
       <Head>
@@ -40,8 +40,8 @@ const HPGamingPage = () => {
 
         <div className="sm:mb-4 mb-3">
           <Image
-            className="sm:w-8 sm:h-8 w-6 h-6"
-            src="/images/hp/logo.jpeg"
+            className="sm:w-8 sm:h-8 w-6 h-6 rounded"
+            src="/images/spuun/logo.png"
             alt="Logo of Adonis Map"
             height={32}
             width={32}
@@ -49,18 +49,18 @@ const HPGamingPage = () => {
         </div>
 
         <h1 className="sm:text-5xl text-4xl font-bold mb-3 leading-snug text-contentDark">
-          Mystery Gift
+          Spuun
         </h1>
 
         <div className="text-lg font-medium sm:mb-8 mb-6 text-default flex items-center gap-x-3 flex-wrap">
           <span>
-            HP Gaming Thailand<span className="mx-2">•</span>
-            2023
+            Venture Group<span className="mx-2">•</span>
+            2022
           </span>
           <span>-</span>
           <Link
             className="underline text-blue-700 md:hover:opacity-70"
-            href="https://www.hpgamingthailand.com"
+            href="https://www.spuun.me"
             target="_blank"
             rel="noreferrer noopener"
           >
@@ -71,31 +71,32 @@ const HPGamingPage = () => {
         <div className="grid lg:grid-cols-2">
           <p className="sm:text-lg lg:mr-16">
             HP is one of the best computer brands in the world. I had the
-            pleasure of being invited to build their mystery gift website for
-            the Commart Thailand flash sale event.
+            pleasure of being invited to build their Spuun website for the
+            Commart Thailand flash sale event.
           </p>
 
           <div className="grid sm:grid-cols-2 text-contentDark lg:mt-0 mt-16">
             <div className="mr-8">
               <div className="mb-8">
                 <h2 className="font-bold mb-2 text-sm tracking-widest">ROLE</h2>
-                <p className="">Developer</p>
+                <p>Developer</p>
               </div>
 
               <div className="flex flex-col gap-2 sm:mb-0 mb-8">
                 <h2 className="font-bold text-sm tracking-widest">
-                  RESPONSIBILITIES
+                  TECH STACK
                 </h2>
-                <p className="">Fullstack Development</p>
-                <p className="">Admin Dashboard Design</p>
-                <p className="">Testing</p>
+                <p>
+                  React Native, Next.js, Node.js, Express.js, PostgreSQL,
+                  Prisma, Redis
+                </p>
               </div>
             </div>
 
             <div className="flex flex-col gap-2 sm:mb-0 mb-8">
               <h2 className="font-bold text-sm tracking-widest">CREDITS</h2>
-              <p className="">Chalita Chuleekeit, Product Lead</p>
-              <p className="">Junius Sim, Project Manager</p>
+              <p>Junius Sim, Founder</p>
+              <p>Aimmy, Designer</p>
             </div>
           </div>
         </div>
@@ -239,4 +240,4 @@ const HPGamingPage = () => {
   )
 }
 
-export default HPGamingPage
+export default SpuunPage

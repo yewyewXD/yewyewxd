@@ -18,13 +18,13 @@ const PROJECTS = [
     coverImage: '/images/adonis-map/front_cover.png',
   },
   {
-    link: '/hp-gaming',
-    image: '/images/hp/logo.jpeg',
-    title: 'Mystery Gift',
-    role: 'NEXT.JS FULLSTACK',
-    year: '2023',
-    description: 'Incentivize HP Laptop gamers to buy more.',
-    coverImage: '/images/adonis-map/front_cover.png', // todo: update
+    link: '/spuun',
+    image: '/images/spuun/logo.png',
+    title: 'Spuun',
+    role: 'FULLSTACK & MOBILE',
+    year: '2022',
+    description: 'Help restaurants in Bangkok sell online.',
+    coverImage: '/images/spuun/front_cover.png',
   },
 ]
 
@@ -68,11 +68,11 @@ export default function Home() {
             of Experience.
           </p>
 
-          <div className="sm:mt-4 mt-3 flex items-center gap-6 z-50">
+          <div className="sm:mt-4 mt-3 flex items-center gap-8 z-50">
             <Link
               href="https://github.com/yewyewxd"
               target="_blank"
-              className="p-2 rounded-lg hover:bg-white hover:opacity-70"
+              className="p-1 rounded-lg hover:bg-white hover:opacity-70"
             >
               <Github className="sm:w-8 sm:h-8 w-7 h-7" />
             </Link>
@@ -80,7 +80,7 @@ export default function Home() {
             <Link
               href="https://www.linkedin.com/in/yewyewxd"
               target="_blank"
-              className="p-2 rounded-lg hover:bg-white hover:opacity-70"
+              className="p-1 rounded-lg hover:bg-white hover:opacity-70"
             >
               <LinkedIn className="sm:w-8 sm:h-8 w-7 h-7" />
             </Link>
@@ -88,7 +88,7 @@ export default function Home() {
             <Link
               href="/resume.pdf"
               target="_blank"
-              className="p-2 rounded-lg hover:bg-white hover:opacity-70"
+              className="p-1 rounded-lg hover:bg-white hover:opacity-70"
             >
               <Resume className="sm:w-8 sm:h-8 w-7 h-7" />
             </Link>
@@ -115,7 +115,7 @@ export default function Home() {
               <div className="lg:p-16 p-8 lg:pr-0 lg:pb-16 sm:pb-0 pb-4">
                 <div className="mb-3">
                   <Image
-                    className="sm:w-8 sm:h-8 w-6 h-6 rounded-full"
+                    className="sm:w-8 sm:h-8 w-6 h-6 rounded"
                     src={project.image}
                     alt={`Logo of ${project.title}`}
                     height={32}
