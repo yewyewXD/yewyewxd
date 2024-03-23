@@ -51,7 +51,7 @@ export default function Home() {
 
       <Navbar />
 
-      <section className="xl:h-[80vh] h-screen flex flex-col items-center justify-center">
+      <section className="xl:h-[80vh] sm:h-screen h-[80vh] flex flex-col items-center justify-center">
         <div className="md:block hidden w-full">
           <Canvas>
             <HeroText />
@@ -64,7 +64,8 @@ export default function Home() {
           </h1>
 
           <p className="sm:text-lg max-w-[500px] mb-12 md:mt-32 leading-normal text-default pointer-events-none px-3">
-            {'NextJS Fullstack Developer with 4 Years of Experience.'}
+            NextJS Fullstack Developer with <br className="sm:hidden" />4 Years
+            of Experience.
           </p>
 
           <Link
