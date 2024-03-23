@@ -71,10 +71,25 @@ const AdonisMapPage = () => {
 
         <div className="grid lg:grid-cols-2">
           <p className="sm:text-lg lg:mr-16">
-            The Adonis community is home to many young men focused on
-            self-improvement. While numerous friendships are cultivated online,
-            members often face challenges in finding brothers to meet up with in
-            real life. This is where Adonis Map comes to the rescue.
+            <Link
+              className="md:hover:opacity-70 underline"
+              href="https://skool.com/adonis/about"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Adonis School
+            </Link>{' '}
+            is a premium self-improvement community created by famous YouTuber,{' '}
+            <Link
+              className="md:hover:opacity-70 underline"
+              href="https://www.youtube.com/@Hamza97"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Hamza
+            </Link>
+            . While numerous friendships are cultivated online, members often
+            face challenges in finding brothers to meet up with in real life.
           </p>
 
           <div className="grid sm:grid-cols-2 text-contentDark lg:mt-0 mt-16">
@@ -97,17 +112,7 @@ const AdonisMapPage = () => {
 
             <div className="flex flex-col gap-2 sm:mb-0 mb-8">
               <h2 className="font-bold text-sm tracking-widest">CREDITS</h2>
-              <p className="">
-                <Link
-                  className="md:hover:opacity-70 underline"
-                  href="https://www.youtube.com/@Hamza97"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  Hamza Ahmed
-                </Link>
-                , Community Creator
-              </p>
+              <p className="">Hamza Ahmed , Community Creator</p>
               <p className="">Danish Ahmed, Quality Assurance</p>
             </div>
           </div>
@@ -116,9 +121,19 @@ const AdonisMapPage = () => {
         <div className="mx-auto max-w-[664px] px-8 py-6 bg-white rounded-xl sm:my-16 my-12 text-contentDark">
           <h2 className="font-bold mb-2 text-sm tracking-widest">PROBLEM</h2>
           <p className="sm:text-lg">
-            The Skool platform, on which we hosted our community, lacks an easy
-            way for people to connect in real life. Consequently, our community
-            feed was flooded with low-quality posts like {`"Anyone from XYZ?"`}
+            The{' '}
+            <Link
+              className="md:hover:opacity-70 underline"
+              href="https://skool.com"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Skool
+            </Link>{' '}
+            platform (think Facebook groups), on which we hosted our community,
+            lacks an easy way for people to connect in real life. Consequently,
+            our community feed was flooded with low-quality posts like{' '}
+            {`"Anyone from XYZ?"`}
           </p>
         </div>
 
@@ -132,16 +147,16 @@ const AdonisMapPage = () => {
 
         <div className="max-w-[600px] mx-auto sm:my-16 my-8 sm:text-lg text-default">
           <p className="mb-6">
-            Hamza, the creator, subsequently banned posts aimed at finding
-            people nearby. While this measure helps maintain high-value content
-            in our community, it also amplifies the challenge for members to
-            organize meetups.
+            The creator subsequently banned posts aimed at finding people
+            nearby. While this measure helps maintain high-value content in our
+            community, it also amplifies the challenge for members to organize
+            meetups.
           </p>
 
           <p>
-            As a fellow Adonis community member, I too faced the same struggle.
-            Driven by a strong desire to solve problems, I decided to take a
-            shot at building a solution.
+            As a fellow community member, I too faced the same struggle. Driven
+            by a strong desire to solve problems, I decided to take a shot at
+            building a solution.
           </p>
         </div>
 
@@ -224,8 +239,8 @@ const AdonisMapPage = () => {
             The Adonis Map, born out of my frustration as a hobby project, has
             evolved into the official map for Adonis School.{' '}
             <strong>
-              At the time of writing, we have helped 482 members find nearby
-              brothers and initiate meetups!
+              At the time of writing, we have helped 530 members build lifelong
+              friendships!
             </strong>
           </p>
         </div>
