@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { Github, LinkedIn } from './Icons'
 
 const Footer = () => {
   return (
@@ -12,13 +13,7 @@ const Footer = () => {
             target="_blank"
             className="flex justify-center items-center mx-4 w-11 h-11 rounded-lg hover:bg-white"
           >
-            <Image
-              className="h-auto"
-              src="/images/icon_github.svg"
-              alt="Github"
-              height={32}
-              width={32}
-            />
+            <Github className="w-8 h-8" />
           </Link>
 
           <Link
@@ -26,13 +21,7 @@ const Footer = () => {
             target="_blank"
             className="flex justify-center items-center mx-4 w-11 h-11 rounded-lg hover:bg-white"
           >
-            <Image
-              className="h-auto"
-              src="/images/icon_linkedin.svg"
-              alt="LinkedIn"
-              height={32}
-              width={32}
-            />
+            <LinkedIn className="w-8 h-8" />
           </Link>
         </div>
 

@@ -3,7 +3,7 @@ import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import Canvas from '@/components/threejs/Canvas'
 import HeroText from '@/components/threejs/HeroText'
-import { ArrowDown } from '@/components/Icons'
+import { ArrowDown, Github, LinkedIn, Resume } from '@/components/Icons'
 import Image from 'next/image'
 import Head from 'next/head'
 
@@ -63,13 +63,39 @@ export default function Home() {
             {"Hi, I'm Kang"}
           </h1>
 
-          <p className="sm:text-lg max-w-[500px] mb-12 md:mt-32 leading-normal text-default pointer-events-none px-3">
+          <p className="sm:text-lg max-w-[500px] md:mt-44 leading-normal text-default pointer-events-none px-3">
             NextJS Fullstack Developer with <br className="sm:hidden" />4 Years
             of Experience.
           </p>
 
+          <div className="sm:mt-4 mt-3 flex items-center gap-6 z-50">
+            <Link
+              href="https://github.com/yewyewxd"
+              target="_blank"
+              className="p-2 rounded-lg hover:bg-white hover:opacity-70"
+            >
+              <Github className="sm:w-8 sm:h-8 w-7 h-7" />
+            </Link>
+
+            <Link
+              href="https://www.linkedin.com/in/yewyewxd"
+              target="_blank"
+              className="p-2 rounded-lg hover:bg-white hover:opacity-70"
+            >
+              <LinkedIn className="sm:w-8 sm:h-8 w-7 h-7" />
+            </Link>
+
+            <Link
+              href="/resume.pdf"
+              target="_blank"
+              className="p-2 rounded-lg hover:bg-white hover:opacity-70"
+            >
+              <Resume className="sm:w-8 sm:h-8 w-7 h-7" />
+            </Link>
+          </div>
+
           <Link
-            className="flex flex-col items-center gap-1 transition-opacity duration-200 hover:opacity-60 cursor-pointer z-50 text-default sm:text-lg"
+            className="mt-12 flex flex-col items-center gap-1 transition-opacity duration-200 hover:opacity-60 cursor-pointer z-50 text-default sm:text-lg"
             href="#projects"
           >
             <span>See Projects</span>
@@ -89,7 +115,7 @@ export default function Home() {
               <div className="lg:p-16 p-8 lg:pr-0 lg:pb-16 sm:pb-0 pb-4">
                 <div className="mb-3">
                   <Image
-                    className="sm:w-8 sm:h-8 w-6 h-6"
+                    className="sm:w-8 sm:h-8 w-6 h-6 rounded-full"
                     src={project.image}
                     alt={`Logo of ${project.title}`}
                     height={32}
