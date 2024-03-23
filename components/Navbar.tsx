@@ -23,11 +23,6 @@ const NAV_LINKS = [
     name: 'Contact',
     Icon: Mail,
   },
-  {
-    link: '/resume.pdf',
-    name: 'Resume',
-    Icon: Document,
-  },
 ]
 
 const Navbar = ({ hasBack }: { hasBack?: boolean }) => {
