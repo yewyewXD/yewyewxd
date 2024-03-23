@@ -79,7 +79,7 @@ const AdonisMapPage = () => {
             >
               Adonis School
             </Link>{' '}
-            is a premium self-improvement community created by famous YouTuber,{' '}
+            is a premium self-improvement community led by famous YouTuber,{' '}
             <Link
               className="md:hover:opacity-70 underline"
               href="https://www.youtube.com/@Hamza97"
@@ -88,40 +88,7 @@ const AdonisMapPage = () => {
             >
               Hamza
             </Link>
-            . While numerous friendships are cultivated online, members often
-            face challenges in finding brothers to meet up with in real life.
-          </p>
-
-          <div className="grid sm:grid-cols-2 text-contentDark lg:mt-0 mt-16">
-            <div className="mr-8">
-              <div className="mb-8">
-                <h2 className="font-bold mb-2 text-sm tracking-widest">ROLE</h2>
-                <p className="">Designer & Developer</p>
-              </div>
-
-              <div className="flex flex-col gap-2 sm:mb-0 mb-8">
-                <h2 className="font-bold text-sm tracking-widest">
-                  RESPONSIBILITIES
-                </h2>
-                <p className="">UI/UX</p>
-                <p className="">Collect Feedback</p>
-                <p className="">Fullstack Development</p>
-                <p className="">A/B Testing</p>
-              </div>
-            </div>
-
-            <div className="flex flex-col gap-2 sm:mb-0 mb-8">
-              <h2 className="font-bold text-sm tracking-widest">CREDITS</h2>
-              <p className="">Hamza Ahmed , Community Creator</p>
-              <p className="">Danish Ahmed, Quality Assurance</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="mx-auto max-w-[664px] px-8 py-6 bg-white rounded-xl sm:my-16 my-12 text-contentDark">
-          <h2 className="font-bold mb-2 text-sm tracking-widest">PROBLEM</h2>
-          <p className="sm:text-lg">
-            The{' '}
+            . The community is created on{' '}
             <Link
               className="md:hover:opacity-70 underline"
               href="https://skool.com"
@@ -129,11 +96,39 @@ const AdonisMapPage = () => {
               rel="noreferrer noopener"
             >
               Skool
-            </Link>{' '}
-            platform (think Facebook groups), on which we hosted our community,
-            lacks an easy way for people to connect in real life. Consequently,
-            our community feed was flooded with low-quality posts like{' '}
-            {`"Anyone from XYZ?"`}
+            </Link>
+            , a community and course hosting platform founded by Sam Ovens.
+          </p>
+
+          <div className="grid sm:grid-cols-2 text-contentDark lg:mt-0 mt-16">
+            <div className="mr-8">
+              <div className="mb-8">
+                <h2 className="font-bold mb-2 text-sm tracking-widest">ROLE</h2>
+                <p>Designer & Developer</p>
+              </div>
+
+              <div className="flex flex-col gap-2 sm:mb-0 mb-8">
+                <h2 className="font-bold text-sm tracking-widest">
+                  TECH STACK
+                </h2>
+                <p>Next.js, Node.js, PostgreSQL, Prisma</p>
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-2 sm:mb-0 mb-8">
+              <h2 className="font-bold text-sm tracking-widest">CREDITS</h2>
+              <p>Hamza Ahmed, Community Creator</p>
+              <p>Danish Ahmed, Quality Assurance</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mx-auto max-w-[664px] px-8 py-6 bg-white rounded-xl sm:my-16 my-12 text-contentDark">
+          <h2 className="font-bold mb-2 text-sm tracking-widest">PROBLEM</h2>
+          <p className="sm:text-lg">
+            The Skool platform lacks an easy way for people to connect in real
+            life. Consequently, our community feed was flooded with low-quality
+            posts like {`"Anyone from X country?"`}
           </p>
         </div>
 
@@ -147,10 +142,9 @@ const AdonisMapPage = () => {
 
         <div className="max-w-[600px] mx-auto sm:my-16 my-8 sm:text-lg text-default">
           <p className="mb-6">
-            The creator subsequently banned posts aimed at finding people
-            nearby. While this measure helps maintain high-value content in our
-            community, it also amplifies the challenge for members to organize
-            meetups.
+            The creator then banned posts aimed at finding people nearby. While
+            this measure helps maintain high-value content in our community, it
+            also amplifies the challenge for members to organize meetups.
           </p>
 
           <p>
@@ -163,23 +157,24 @@ const AdonisMapPage = () => {
         <div className="mx-auto max-w-[664px] px-8 py-6 bg-white rounded-xl sm:my-16 my-14 text-contentDark">
           <h2 className="font-bold mb-2 text-sm tracking-widest">OUR VISION</h2>
           <p className="sm:text-lg">
-            We attempted to address this issue using Google My Maps. However, it
-            has a member limit, requires the creator to manually add member
-            locations, and the map quickly became cluttered with pins. We need a
-            map that overcomes all those obstacles.
+            To stay on top as the number one self-improvement community on
+            Skool, we need to do more than just chatting online. We want to help
+            our members easily meet up in real life, create memories, and
+            strengthen their bonds with each other.{' '}
+            {"Here's how we achieve that with Adonis Map:"}
           </p>
         </div>
 
         <div className="max-w-[600px] mx-auto sm:mt-24 mt-20 mb-14">
           <h2 className="font-bold mb-2 text-sm tracking-widest text-defaulter">
-            KEY FEATURES
+            FEATURES
           </h2>
           <h3 className="text-2xl font-semibold mb-3 text-contentDark">
             Automatic Verification
           </h3>
           <p className="sm:text-lg text-contentDark ">
             {
-              "For each entry, the backend visits the user's profile to verify their community membership. Members can finally add their own locations themselves, saving the admin hours of manual entry."
+              "Members can add their own locations on the map. For each entry, the backend visits the user's Skool profile to verify their membership. This saves the admin days of manual entry, which was our old method of collecting member addresses and adding them onto Google My Maps."
             }
           </p>
         </div>
@@ -195,8 +190,10 @@ const AdonisMapPage = () => {
         <div className="max-w-[600px] mx-auto sm:mt-24 mt-20 mb-14 text-contentDark">
           <h3 className="text-2xl font-semibold mb-3">{"Who's Near Me?"}</h3>
           <p className="sm:text-lg">
-            This is our most beloved feature, enabling users to locate
-            like-minded brothers nearby with just one simple click.
+            This is our most beloved feature. Once you have added your location,
+            you can locate other members who live nearest to you with just one
+            simple click. For every member on the map, there is a link to their
+            Skool profile where you can chat with them and initiate meetups.
           </p>
         </div>
 
@@ -215,10 +212,10 @@ const AdonisMapPage = () => {
         <div className="max-w-[600px] mx-auto sm:mt-24 mt-20 mb-14 text-contentDark">
           <h3 className="text-2xl font-semibold mb-3">Grouped Pins</h3>
           <p className="sm:text-lg">
-            The picture on the left shows our experience with Google My Maps,
-            where country names were barely visible. The Adonis Map (picture on
-            the right) effectively groups pins into expandable clusters,
-            eliminating lag on the map.
+            The picture on the left shows our previous experience with Google My
+            Maps, where the map was crammed with pins. It feels stressful just
+            to look at it. In contrast, the Adonis Map effectively groups pins
+            into expandable clusters. No more stress and lags!
           </p>
         </div>
 
@@ -236,12 +233,28 @@ const AdonisMapPage = () => {
           </h2>
 
           <p className="sm:text-lg text-default">
-            The Adonis Map, born out of my frustration as a hobby project, has
-            evolved into the official map for Adonis School.{' '}
-            <strong>
-              At the time of writing, we have helped 530 members build lifelong
-              friendships!
-            </strong>
+            At the time of writing, we have{' '}
+            <strong>helped 530 members build lifelong friendships!</strong> The
+            community got so hyped that it has attracted another famous
+            YouTuber,{' '}
+            <Link
+              className="md:hover:opacity-70 underline"
+              href="https://www.youtube.com/@Denmosocial"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Denmo
+            </Link>{' '}
+            to do business with us. Check out his{' '}
+            <Link
+              className="md:hover:opacity-70 underline"
+              href="https://socializer.world"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              community map
+            </Link>
+            !
           </p>
         </div>
 
