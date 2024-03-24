@@ -173,8 +173,8 @@ const SpuunPage = () => {
 
         <div className="max-w-[600px] mx-auto sm:my-16 my-8 sm:text-lg text-default">
           <p className="mb-6">
-            From the comparisons above, you can see that the fast food listed on
-            GrabFood is about 12% higher. This percentage is usually
+            From the comparisons above, you can see that the price of fast food
+            listed on GrabFood is about 12% higher. This percentage is usually
             significantly higher for restaurants.
           </p>
 
@@ -185,19 +185,19 @@ const SpuunPage = () => {
           </p>
 
           <p>
-            If the customer wants the order to be delivered, the fee will shoot
-            up to 30%, requiring us to increase the price even more, and
-            customers will start to complain.
+            If the customer opts for delivery, the fee will escalate to 30%,
+            forcing us to increase the price even more. This could lead to
+            numerous customer complaints.
           </p>
         </div>
 
         <div className="mx-auto max-w-[664px] px-8 py-6 bg-white rounded-xl sm:my-16 my-14 text-contentDark">
           <h2 className="font-bold mb-2 text-sm tracking-widest">OUR VISION</h2>
           <p className="sm:text-lg">
-            Since COVID, many customers want to order our food from home. We
-            need to maintain our reputation as the top Singaporean restaurant in
-            Bangkok without compromising profitability. What if we bootstrapped
-            our own food delivery app with zero commission fee?
+            Since COVID, many customers prefer ordering from home. We need to
+            maintain our reputation as the top Singaporean restaurant in Bangkok
+            without compromising profitability. What if we developed our own
+            food delivery app and avoided commission fees altogether?
           </p>
         </div>
 
