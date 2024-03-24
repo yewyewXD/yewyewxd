@@ -8,7 +8,7 @@ import { Website } from '@/components/Icons'
 
 const META_TITLE = "Adonis Map Case Study | Kang's Portfolio"
 const META_DESCRIPTION =
-  'The Adonis Map, born out of my frustration as a hobby project, has evolved into the official map for Adonis School. At the time of writing, we have helped 482 members find nearby brothers and initiate meetups!'
+  'At the time of writing, we have helped 561 members build lifelong friendships! The community got so hyped that it has attracted another famous YouTuber, Denmo to do business with us. Check out his community map!'
 
 const AdonisMapPage = () => {
   return (

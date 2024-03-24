@@ -7,7 +7,8 @@ import Head from 'next/head'
 import { Android, IOS, Website } from '@/components/Icons'
 
 const META_TITLE = "Spuun Case Study | Kang's Portfolio"
-const META_DESCRIPTION = ''
+const META_DESCRIPTION =
+  'On average, we receive 20 online orders per day, leading us to estimate revenue of ฿400,000 (~10k USD) per month, solely from online orders! We will soon integrate this delivery solution into many of our restaurants, which could easily 4x our revenue!'
 
 const SpuunPage = () => {
   return (
