@@ -31,11 +31,11 @@ const SpuunPage = () => {
       <div className="container">
         <div className="sm:pt-28 pt-24 sm:pb-20 pb-8">
           <Image
-            className="w-[800px] mx-auto object-contain rounded-2xl sm:shadow-2xl shadow-lg"
-            src="/images/adonis-map/cover.png"
-            alt="Cover Image of Adonis Map"
-            height={600}
-            width={1000}
+            className="w-[800px] mx-auto object-contain sm:rounded-2xl rounded-lg sm:shadow-2xl shadow-lg"
+            src="/images/spuun/cover.png"
+            alt="Cover Image of Spuun"
+            height={800}
+            width={600}
           />
         </div>
 
@@ -43,7 +43,7 @@ const SpuunPage = () => {
           <Image
             className="sm:w-8 sm:h-8 w-6 h-6 rounded"
             src="/images/spuun/logo.png"
-            alt="Logo of Adonis Map"
+            alt="Logo of Spuun"
             height={32}
             width={32}
           />
@@ -133,105 +133,137 @@ const SpuunPage = () => {
           <h2 className="font-bold mb-2 text-sm tracking-widest">PROBLEM</h2>
           <p className="sm:text-lg">
             Food delivery services like GrabFood and Foodpanda often impose a
-            very high commission fee (30%), which has significantly impacted our
-            profitability from online orders.
+            very high commission fee (Pickup - 15%, Delivery - 30%), which has
+            significantly impacted our profitability from online orders.
           </p>
         </div>
 
-        {/* Before and After */}
-        {/* Picture - gray bar, 10% margin line, 3% card fee (red), 7% profit green */}
-        {/* Picture - gray bar, 10% margin (green), 20% delivery fee, 3% card (red) */}
-        {/* Write: Every restaurant will bump their menu price on these delivery platforms - complaining customer */}
+        <div className="flex items-center justify-center sm:gap-20 gap-6 text-center">
+          <div>
+            <Image
+              className="sm:rounded-2xl rounded-lg shadow-lg"
+              src="/images/spuun/casestudy1-1.png"
+              alt="KFC original price"
+              width={250}
+              height={600}
+            />
+            <p className="text-footer text-sm mt-6">
+              Original Price
+              <br className="sm:hidden" />
+              <span className="sm:inline hidden"> -</span> ฿159
+            </p>
+          </div>
 
-        <Image
-          className="w-[750px] mx-auto"
-          src="/images/adonis-map/casestudy1.png"
-          alt="The Problem"
-          width={1200}
-          height={883}
-        />
+          <div>
+            <Image
+              className="sm:rounded-2xl rounded-lg shadow-lg"
+              src="/images/spuun/casestudy1-2.png"
+              alt="KFC price on GrabFood"
+              width={250}
+              height={600}
+            />
+            <p className="text-footer text-sm mt-6">
+              Price on GrabGood
+              <br className="sm:hidden" />
+              <span className="sm:inline hidden"> -</span> ฿179
+            </p>
+          </div>
+        </div>
 
         <div className="max-w-[600px] mx-auto sm:my-16 my-8 sm:text-lg text-default">
           <p className="mb-6">
-            Hamza, the creator, subsequently banned posts aimed at finding
-            people nearby. While this measure helps maintain high-value content
-            in our community, it also amplifies the challenge for members to
-            organize meetups.
+            From the comparisons above, you can see that the fast food listed on
+            GrabFood is about 12% higher. This percentage is usually
+            significantly higher for restaurants.
+          </p>
+
+          <p className="mb-6">
+            The average profit margin of a restaurant is 5%. If we have to bear
+            a 15% fee for each {`"pick-up"`} order, we must increase their
+            prices by at least 10% just to break even.
           </p>
 
           <p>
-            As a fellow Adonis community member, I too faced the same struggle.
-            Driven by a strong desire to solve problems, I decided to take a
-            shot at building a solution.
+            If the customer wants the order to be delivered, the fee will shoot
+            up to 30%, requiring us to increase the price even more, and
+            customers will start to complain.
           </p>
         </div>
 
         <div className="mx-auto max-w-[664px] px-8 py-6 bg-white rounded-xl sm:my-16 my-14 text-contentDark">
           <h2 className="font-bold mb-2 text-sm tracking-widest">OUR VISION</h2>
           <p className="sm:text-lg">
-            We attempted to address this issue using Google My Maps. However, it
-            has a member limit, requires the creator to manually add member
-            locations, and the map quickly became cluttered with pins. We need a
-            map that overcomes all those obstacles.
+            Since COVID, many customers want to order our food from home. We
+            need to maintain our reputation as the top Singaporean restaurant in
+            Bangkok without compromising profitability. What if we bootstrapped
+            our own food delivery app with zero commission fee?
           </p>
         </div>
 
         <div className="max-w-[600px] mx-auto sm:mt-24 mt-20 mb-14">
           <h2 className="font-bold mb-2 text-sm tracking-widest text-defaulter">
-            KEY FEATURES
+            FEATURES
           </h2>
           <h3 className="text-2xl font-semibold mb-3 text-contentDark">
-            Automatic Verification
+            Online Ordering
           </h3>
-          <p className="sm:text-lg text-contentDark ">
-            {
-              "For each entry, the backend visits the user's profile to verify their community membership. Members can finally add their own locations themselves, saving the admin hours of manual entry."
-            }
+          <p className="sm:text-lg text-contentDark">
+            We are launching dedicated web stores for each of our restaurants,
+            starting with{' '}
+            <Link
+              className="md:hover:opacity-70 underline"
+              href="https://ohjackie.spuun.me/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Oh Jackie
+            </Link>{' '}
+            as a trial run. Customers can now conveniently order their favorite
+            Singaporean dishes online at the original price!
           </p>
         </div>
 
         <Image
           className="mx-auto rounded-xl shadow-lg"
-          src="/images/adonis-map/feature1.png"
-          alt=""
-          width={400}
-          height={600}
+          src="/images/spuun/curry_puff.png"
+          alt="Add to cart modal on the Spuun web store"
+          width={250}
+          height={500}
         />
 
         <div className="max-w-[600px] mx-auto sm:mt-24 mt-20 mb-14 text-contentDark">
-          <h3 className="text-2xl font-semibold mb-3">{"Who's Near Me?"}</h3>
+          <h3 className="text-2xl font-semibold mb-3">Payment Processing</h3>
           <p className="sm:text-lg">
-            This is our most beloved feature, enabling users to locate
-            like-minded brothers nearby with just one simple click.
+            We use Stripe for processing payments and Stripe Connect for
+            managing payments for each of our restaurants separately. This setup
+            is highly scalable, allowing us to seamlessly onboard additional
+            restaurants onto our platform in the future.
           </p>
         </div>
 
         <div className="max-w-[600px] h-auto mx-auto">
           <Image
             className="rounded-xl shadow-lg"
-            src={'/gif/adonis-map/feature2.gif'}
-            layout={'responsive'}
+            src={'/images/spuun/feature2.svg'}
             width={900}
             height={563}
-            alt={`Nearby member feature GIF`}
-            unoptimized={true}
+            alt={`Stripe Payments`}
           />
         </div>
 
         <div className="max-w-[600px] mx-auto sm:mt-24 mt-20 mb-14 text-contentDark">
-          <h3 className="text-2xl font-semibold mb-3">Grouped Pins</h3>
+          <h3 className="text-2xl font-semibold mb-3">Food Delivery</h3>
           <p className="sm:text-lg">
-            The picture on the left shows our experience with Google My Maps,
-            where country names were barely visible. The Adonis Map (picture on
-            the right) effectively groups pins into expandable clusters,
-            eliminating lag on the map.
+            We have partnered with Lalamove to handle all our food delivery
+            needs. Their fare rates are usually 10% lower than {"GrabFood's"},
+            which is great news for our customers!
           </p>
         </div>
 
         <Image
           className="mx-auto rounded-xl shadow-lg"
-          src="/images/adonis-map/feature3.png"
-          alt=""
+          src="/images/spuun/feature3.png"
+          alt="Lalamove and Spuun partnership"
           width={600}
           height={400}
         />
@@ -242,30 +274,16 @@ const SpuunPage = () => {
           </h2>
 
           <p className="sm:text-lg text-default">
-            The Adonis Map, born out of my frustration as a hobby project, has
-            evolved into the official map for Adonis School.{' '}
+            On average, we receive 20 online orders per day, leading us to
+            estimate{' '}
             <strong>
-              At the time of writing, we have helped 482 members find nearby
-              brothers and initiate meetups!
-            </strong>
+              revenue of ฿400,000 (~10k USD) per month, solely from online
+              orders!
+            </strong>{' '}
+            We will soon integrate this delivery solution into many of our
+            restaurants, which could <strong>easily 4x our revenue!</strong>
           </p>
         </div>
-
-        <Image
-          className="mx-auto rounded-xl shadow-lg mb-8"
-          src="/images/adonis-map/result.png"
-          alt=""
-          width={600}
-          height={400}
-        />
-
-        <Image
-          className="w-[900px] mx-auto mb-8"
-          src="/images/adonis-map/wins.png"
-          alt="The Result"
-          width={1200}
-          height={883}
-        />
       </div>
 
       <Footer />
