@@ -4,6 +4,7 @@ import Footer from '@/components/Footer'
 import Image from 'next/image'
 import Link from 'next/link'
 import Head from 'next/head'
+import { Website } from '@/components/Icons'
 
 const META_TITLE = "Adonis Map Case Study | Kang's Portfolio"
 const META_DESCRIPTION =
@@ -31,7 +32,7 @@ const AdonisMapPage = () => {
       <div className="container">
         <div className="sm:pt-28 pt-24 sm:pb-20 pb-8">
           <Image
-            className="w-[800px] mx-auto object-contain rounded-2xl sm:shadow-2xl shadow-lg"
+            className="w-[800px] mx-auto object-contain sm:rounded-2xl rounded-lg sm:shadow-2xl shadow-lg"
             src="/images/adonis-map/cover.png"
             alt="Cover Image of Adonis Map"
             height={600}
@@ -60,12 +61,12 @@ const AdonisMapPage = () => {
           </span>
           <span>-</span>
           <Link
-            className="underline text-blue-700 md:hover:opacity-70"
-            href="https://adonis-map.com"
+            className="underline text-blue-700 md:hover:opacity-70 flex items-center gap-1"
+            href="https://www.spuun.me"
             target="_blank"
             rel="noreferrer noopener"
           >
-            View Live
+            <Website className="w-5 h-5" /> Live
           </Link>
         </div>
 
@@ -234,7 +235,7 @@ const AdonisMapPage = () => {
 
           <p className="sm:text-lg text-default">
             At the time of writing, we have{' '}
-            <strong>helped 530 members build lifelong friendships!</strong> The
+            <strong>helped 561 members build lifelong friendships!</strong> The
             community got so hyped that it has attracted another famous
             YouTuber,{' '}
             <Link
