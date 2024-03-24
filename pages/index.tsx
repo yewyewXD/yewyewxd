@@ -72,7 +72,7 @@ export default function Home() {
             <Link
               href="https://github.com/yewyewxd"
               target="_blank"
-              className="p-1 rounded-lg hover:bg-white hover:opacity-70"
+              className="p-1 rounded hover:bg-white hover:opacity-70"
             >
               <Github className="sm:w-8 sm:h-8 w-7 h-7" />
             </Link>
@@ -80,7 +80,7 @@ export default function Home() {
             <Link
               href="https://www.linkedin.com/in/yewyewxd"
               target="_blank"
-              className="p-1 rounded-lg hover:bg-white hover:opacity-70"
+              className="p-1 rounded hover:bg-white hover:opacity-70"
             >
               <LinkedIn className="sm:w-8 sm:h-8 w-7 h-7" />
             </Link>
@@ -88,7 +88,7 @@ export default function Home() {
             <Link
               href="/resume.pdf"
               target="_blank"
-              className="p-1 rounded-lg hover:bg-white hover:opacity-70"
+              className="p-1 rounded hover:bg-white hover:opacity-70"
             >
               <Resume className="sm:w-8 sm:h-8 w-7 h-7" />
             </Link>
