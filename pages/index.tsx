@@ -28,7 +28,7 @@ const PROJECTS = [
 
 const META_TITLE = "Kang's Portfolio"
 const META_DESCRIPTION =
-  'NextJS Fullstack Developer with 4 Years of Experience.'
+  'Fullstack NextJS Developer with 4 Years of Experience.'
 
 export default function Home() {
   return (
@@ -56,7 +56,7 @@ export default function Home() {
           </h1>
 
           <p className="sm:text-lg max-w-[500px] leading-normal text-default pointer-events-none px-3">
-            NextJS Fullstack Developer with <br className="sm:hidden" />4 Years
+            Fullstack NextJS Developer with <br className="sm:hidden" />4 Years
             of Experience.
           </p>
 
