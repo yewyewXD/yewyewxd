@@ -1,8 +1,6 @@
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
-import Canvas from '@/components/threejs/Canvas'
-import HeroText from '@/components/threejs/HeroText'
 import { ArrowDown, Github, LinkedIn, Resume } from '@/components/Icons'
 import Image from 'next/image'
 import Head from 'next/head'
@@ -52,18 +50,12 @@ export default function Home() {
       <Navbar />
 
       <section className="xl:h-[80vh] sm:h-screen h-[80vh] flex flex-col items-center justify-center">
-        <div className="md:block hidden w-full">
-          <Canvas>
-            <HeroText />
-          </Canvas>
-        </div>
-
         <div className="container flex flex-col justify-center items-center text-center absolute">
-          <h1 className="md:hidden text-[50px] mb-3 font-bold gradientText">
+          <h1 className="md:text-[70px] text-[50px] mb-3 font-bold gradientText">
             {"Hi, I'm Kang"}
           </h1>
 
-          <p className="sm:text-lg max-w-[500px] md:mt-44 leading-normal text-default pointer-events-none px-3">
+          <p className="sm:text-lg max-w-[500px] leading-normal text-default pointer-events-none px-3">
             NextJS Fullstack Developer with <br className="sm:hidden" />4 Years
             of Experience.
           </p>
