@@ -4,6 +4,7 @@ import Footer from '@/components/Footer'
 import Image from 'next/image'
 import Link from 'next/link'
 import Head from 'next/head'
+import { Android, IOS, Website } from '@/components/Icons'
 
 const META_TITLE = "Spuun Case Study | Kang's Portfolio"
 const META_DESCRIPTION = ''
@@ -58,21 +59,48 @@ const SpuunPage = () => {
             2022
           </span>
           <span>-</span>
-          <Link
-            className="underline text-blue-700 md:hover:opacity-70"
-            href="https://www.spuun.me"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            View Live
-          </Link>
+
+          <div className="flex items-center gap-x-4">
+            <Link
+              className="underline text-blue-700 md:hover:opacity-70 flex items-center gap-1"
+              href="https://www.spuun.me"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <Website className="w-5 h-5" /> Live
+            </Link>
+            <Link
+              className="underline text-blue-700 md:hover:opacity-70 flex items-center gap-1"
+              href="https://apps.apple.com/us/app/spuun-merchant/id1636123515"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <IOS className="w-5 h-5" /> IOS
+            </Link>
+            <Link
+              className="underline text-blue-700 md:hover:opacity-70 flex items-center gap-1"
+              href="https://play.google.com/store/apps/details?id=space.palate"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <Android className="w-5 h-5" /> Android
+            </Link>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2">
           <p className="sm:text-lg lg:mr-16">
-            HP is one of the best computer brands in the world. I had the
-            pleasure of being invited to build their Spuun website for the
-            Commart Thailand flash sale event.
+            Venture Group is a holding company of multiple food and beverage
+            brands in Bangkok, with{' '}
+            <Link
+              className="md:hover:opacity-70 underline"
+              href="https://maps.app.goo.gl/e8VdgPYxYTN2GPWo9"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              {"Ping's"}
+            </Link>{' '}
+            as their most renowned restaurant serving Singaporean dishes.
           </p>
 
           <div className="grid sm:grid-cols-2 text-contentDark lg:mt-0 mt-16">
@@ -104,11 +132,16 @@ const SpuunPage = () => {
         <div className="mx-auto max-w-[664px] px-8 py-6 bg-white rounded-xl sm:my-16 my-12 text-contentDark">
           <h2 className="font-bold mb-2 text-sm tracking-widest">PROBLEM</h2>
           <p className="sm:text-lg">
-            The Skool platform, on which we hosted our community, lacks an easy
-            way for people to connect in real life. Consequently, our community
-            feed was flooded with low-quality posts like {`"Anyone from XYZ?"`}
+            Food delivery services like GrabFood and Foodpanda often impose a
+            very high commission fee (30%), which has significantly impacted our
+            profitability from online orders.
           </p>
         </div>
+
+        {/* Before and After */}
+        {/* Picture - gray bar, 10% margin line, 3% card fee (red), 7% profit green */}
+        {/* Picture - gray bar, 10% margin (green), 20% delivery fee, 3% card (red) */}
+        {/* Write: Every restaurant will bump their menu price on these delivery platforms - complaining customer */}
 
         <Image
           className="w-[750px] mx-auto"
