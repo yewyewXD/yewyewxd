@@ -48,7 +48,11 @@ export default function Home() {
         <meta property="og:site_name" content={META_TITLE} />
         <meta property="og:title" content={META_TITLE} />
         <meta property="og:description" content={META_DESCRIPTION} />
-        <meta property="og:image" itemProp="image" content={'/og_image.png'} />
+        <meta
+          property="og:image"
+          itemProp="image"
+          content={'https://www.kangwei.dev/og_image.png'}
+        />
         <link rel="icon" href={'/favicon.png'} />
       </Head>
 
