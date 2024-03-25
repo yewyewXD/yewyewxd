@@ -7,6 +7,8 @@ import Head from 'next/head'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react'
+import reviews from '@/json/reviews.json'
+import ReviewCard from '@/components/ReviewCard'
 
 const PROJECTS = [
   {
@@ -153,6 +155,35 @@ export default function Home() {
               </div>
             </Link>
           ))}
+        </div>
+      </section>
+
+      <section className="py-8 sm:mb-16 mb-4 container flex justify-center">
+        <div className="">
+          <h2 className="sm:text-4xl text-3xl mb-8 font-bold text-default gap-2 text-center">
+            Hear What <br className="sm:hidden" />
+            Others Say!
+          </h2>
+
+          <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-6 text-sm">
+            <div className="flex flex-col gap-6">
+              {reviews.slice(0, 3).map((review) => (
+                <ReviewCard key={review.name} review={review} />
+              ))}
+            </div>
+
+            <div className="flex flex-col gap-6">
+              {reviews.slice(3, 7).map((review) => (
+                <ReviewCard key={review.name} review={review} />
+              ))}
+            </div>
+
+            <div className="lg:flex flex-col gap-6 sm:hidden flex">
+              {reviews.slice(7, 10).map((review) => (
+                <ReviewCard key={review.name} review={review} />
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
