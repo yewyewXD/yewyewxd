@@ -35,8 +35,8 @@ const SpuunPage = () => {
             className="w-[800px] mx-auto object-contain sm:rounded-2xl rounded-lg sm:shadow-2xl shadow-lg"
             src="/images/spuun/cover.png"
             alt="Cover Image of Spuun"
-            height={800}
-            width={600}
+            height={600}
+            width={1000}
           />
         </div>
 
