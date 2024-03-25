@@ -112,7 +112,7 @@ const AdonisMapPage = () => {
                 <h2 className="font-bold text-sm tracking-widest">
                   TECH STACK
                 </h2>
-                <p>Next.js, Node.js, PostgreSQL, Prisma</p>
+                <p>TypeScript, Next.js, Node.js, PostgreSQL, Prisma</p>
               </div>
             </div>
 
