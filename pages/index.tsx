@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Head from 'next/head'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { useLayoutEffect } from 'react'
+import { useEffect } from 'react'
 
 const PROJECTS = [
   {
@@ -34,7 +34,7 @@ const META_DESCRIPTION =
   'Fullstack NextJS Developer with 4 Years of Experience.'
 
 export default function Home() {
-  useLayoutEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
     })
