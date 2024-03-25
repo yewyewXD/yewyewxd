@@ -255,9 +255,9 @@ const SpuunPage = () => {
         <div className="max-w-[600px] mx-auto sm:mt-24 mt-20 mb-14 text-contentDark">
           <h3 className="text-2xl font-semibold mb-3">Food Delivery</h3>
           <p className="sm:text-lg">
-            We have partnered with Lalamove to handle all our food delivery
-            needs. Their fare rates are usually 10% lower than {"GrabFood's"},
-            which is great news for our customers!
+            {`
+          We're thrilled to announce our partnership with Lalamove! Now, with just one click, we can easily match with a driver and get the deliveries sorted in no time. Plus, here's the cherry on top: Lalamove's fare rates are usually 10% lower than GrabFood's, making it a win-win situation for everyone involved!
+            `}
           </p>
         </div>
 
