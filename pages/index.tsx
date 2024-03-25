@@ -36,7 +36,7 @@ const META_DESCRIPTION =
 export default function Home() {
   useLayoutEffect(() => {
     AOS.init({
-      duration: 500,
+      duration: 1000,
     })
   }, [])
 
