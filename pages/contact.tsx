@@ -16,12 +16,8 @@ const ContactPage = () => {
         <meta property="og:site_name" content={META_TITLE} />
         <meta property="og:title" content={META_TITLE} />
         <meta property="og:description" content={META_DESCRIPTION} />
-        <meta
-          property="og:image"
-          itemProp="image"
-          content={'/images/og_image.png'}
-        />
-        <link rel="icon" href={'/images/favicon.png'} />
+        <meta property="og:image" itemProp="image" content={'/og_image.png'} />
+        <link rel="icon" href={'/favicon.png'} />
       </Head>
 
       <section className="h-screen flex flex-col items-center justify-center container">
