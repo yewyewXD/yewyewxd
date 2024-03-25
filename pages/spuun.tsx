@@ -179,9 +179,9 @@ const SpuunPage = () => {
           </p>
 
           <p className="mb-6">
-            The average profit margin of a restaurant is 5%. If we have to bear
-            a 15% fee for each {`"pick-up"`} order, we must increase their
-            prices by at least 10% just to break even.
+            To ensure profitability despite the 15% fee for each {"'pick-up'"}{' '}
+            order, we would need to raise prices by at least 10% to break even,
+            given that our net profit margin per order is approximately 5%.
           </p>
 
           <p>
