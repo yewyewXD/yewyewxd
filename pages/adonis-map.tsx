@@ -8,7 +8,7 @@ import { Website } from '@/components/Icons'
 
 const META_TITLE = "Adonis Map Case Study | Kang's Portfolio"
 const META_DESCRIPTION =
-  'At the time of writing, we have helped 561 members build lifelong friendships! The community got so hyped that it has attracted another famous YouTuber, Denmo to do business with us. Check out his community map!'
+  'At the time of writing, we have helped over 620 members build lifelong friendships! The community got so hyped that it has attracted another famous YouTuber, Denmo to do business with us. Check out his community map!'
 
 const AdonisMapPage = () => {
   return (
@@ -235,8 +235,8 @@ const AdonisMapPage = () => {
 
           <p className="sm:text-lg text-default">
             At the time of writing, we have{' '}
-            <strong>helped 561 members build lifelong friendships!</strong> The
-            community got so hyped that it has attracted another famous
+            <strong>helped over 620 members build lifelong friendships!</strong>{' '}
+            The community got so hyped that it has attracted another famous
             YouTuber,{' '}
             <Link
               className="md:hover:opacity-70 underline"
