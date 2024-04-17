@@ -1,7 +1,7 @@
 <h1 align="center">Hi, I'm Kang 👋</h1>
 <h3 align="center">Highly-Motivated Fullstack NextJS Developer.</h3>
 
-- 🔭 I’m currently working on [Skool Map](http://adonis-map.com/)
+- 🔭 I’m currently working on [Skool Map](https://skoolmap.io/)
 
 - 👨‍💻 [Portfolio](https://kangwei.dev/)
 
