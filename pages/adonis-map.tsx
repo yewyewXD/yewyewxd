@@ -236,7 +236,7 @@ const AdonisMapPage = () => {
           <p className="sm:text-lg text-default">
             At the time of writing, we have{' '}
             <strong>
-              helped over 1000 members build lifelong friendships!
+              helped over 3000 members build lifelong friendships!
             </strong>{' '}
             The community got so hyped that it has attracted another famous
             YouTuber,{' '}
