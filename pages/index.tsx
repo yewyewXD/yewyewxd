@@ -158,7 +158,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-8 sm:mb-16 mb-4 container flex justify-center">
+      {/* <section className="py-8 sm:mb-16 mb-4 container flex justify-center">
         <div className="">
           <h2 className="sm:text-4xl text-3xl mb-8 font-bold text-default gap-2 text-center">
             Hear What <br className="sm:hidden" />
@@ -185,7 +185,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>
