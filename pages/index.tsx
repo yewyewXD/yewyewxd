@@ -4,11 +4,8 @@ import Navbar from '@/components/Navbar'
 import { ArrowDown, Github, LinkedIn, Resume } from '@/components/Icons'
 import Image from 'next/image'
 import Head from 'next/head'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-import { useEffect } from 'react'
-import reviews from '@/json/reviews.json'
-import ReviewCard from '@/components/ReviewCard'
+// import reviews from '@/json/reviews.json'
+// import ReviewCard from '@/components/ReviewCard'
 
 const PROJECTS = [
   {
@@ -36,12 +33,6 @@ const META_DESCRIPTION =
   'Fullstack NextJS Developer with 4 Years of Experience.'
 
 export default function Home() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    })
-  }, [])
-
   return (
     <div>
       <Head>
@@ -61,10 +52,7 @@ export default function Home() {
       <Navbar />
 
       <section className="xl:h-[80vh] h-screen flex flex-col items-center justify-center">
-        <div
-          data-aos="fade-up"
-          className="container flex flex-col justify-center items-center text-center absolute"
-        >
+        <div className="container flex flex-col justify-center items-center text-center absolute float-up">
           <h1 className="md:text-[70px] text-[50px] mb-3 font-bold gradientText">
             {"Hi, I'm Kang"}
           </h1>
