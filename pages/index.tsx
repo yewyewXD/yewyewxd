@@ -52,6 +52,13 @@ export default function Home() {
 
       {/* Section 1: Hero */}
       <section className="h-screen flex flex-col items-center justify-center">
+        <div className="goo-canvas">
+          <div className="goo-blur">
+            <div className="goo-class goo1"></div>
+            <div className="goo-class goo2"></div>
+          </div>
+        </div>
+
         <div className="container flex flex-col justify-center items-center text-center absolute float-up">
           <h1 className="md:text-[70px] text-[50px] mb-3 font-bold gradientText">
             {"Hi, I'm Kang"}
