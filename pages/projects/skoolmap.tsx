@@ -33,7 +33,7 @@ const AdonisMapPage = () => {
         <div className="sm:pt-28 pt-24 sm:pb-20 pb-8">
           <Image
             className="w-[800px] mx-auto object-contain sm:rounded-2xl rounded-lg sm:shadow-2xl shadow-lg"
-            src="/images/adonis-map/cover.png"
+            src="/images/skoolmap/cover.png"
             alt="Cover Image of Adonis Map"
             height={600}
             width={1000}
@@ -43,7 +43,7 @@ const AdonisMapPage = () => {
         <div className="sm:mb-4 mb-3">
           <Image
             className="sm:w-8 sm:h-8 w-6 h-6"
-            src="/images/adonis-map/logo.png"
+            src="/images/skoolmap/logo.png"
             alt="Logo of Adonis Map"
             height={32}
             width={32}
@@ -135,7 +135,7 @@ const AdonisMapPage = () => {
 
         <Image
           className="w-[750px] mx-auto"
-          src="/images/adonis-map/casestudy1.png"
+          src="/images/skoolmap/casestudy1.png"
           alt="The Problem"
           width={1200}
           height={883}
@@ -182,7 +182,7 @@ const AdonisMapPage = () => {
 
         <Image
           className="mx-auto rounded-xl shadow-lg"
-          src="/images/adonis-map/feature1.png"
+          src="/images/skoolmap/feature1.png"
           alt=""
           width={400}
           height={600}
@@ -201,7 +201,7 @@ const AdonisMapPage = () => {
         <div className="max-w-[600px] h-auto mx-auto">
           <Image
             className="rounded-xl shadow-lg"
-            src={'/gif/adonis-map/feature2.gif'}
+            src={'/gif/skoolmap/feature2.gif'}
             layout={'responsive'}
             width={900}
             height={563}
@@ -222,7 +222,7 @@ const AdonisMapPage = () => {
 
         <Image
           className="mx-auto rounded-xl shadow-lg"
-          src="/images/adonis-map/feature3.png"
+          src="/images/skoolmap/feature3.png"
           alt=""
           width={600}
           height={400}
@@ -263,7 +263,7 @@ const AdonisMapPage = () => {
 
         <Image
           className="mx-auto rounded-xl shadow-lg mb-8"
-          src="/images/adonis-map/result.png"
+          src="/images/skoolmap/result.png"
           alt=""
           width={600}
           height={400}
@@ -271,7 +271,7 @@ const AdonisMapPage = () => {
 
         <Image
           className="w-[900px] mx-auto mb-8"
-          src="/images/adonis-map/wins.png"
+          src="/images/skoolmap/wins.png"
           alt="The Result"
           width={1200}
           height={883}

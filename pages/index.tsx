@@ -10,11 +10,11 @@ import Head from 'next/head'
 const PROJECTS = [
   {
     link: '/projects/skoolmap',
-    image: '/images/adonis-map/logo.png',
+    image: '/images/skoolmap/logo.png',
     title: 'Skool Map',
     description:
       'A SaaS that helps Skool community members meet up in real life.',
-    coverImage: '/images/adonis-map/front_cover.png',
+    coverImage: '/images/skoolmap/front_cover.png',
     skills: ['nextjs', 'nodejs'],
   },
   {
