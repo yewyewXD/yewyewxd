@@ -51,30 +51,28 @@ export default function Home() {
       <Navbar />
 
       {/* Section 1: Hero */}
-      <section className="h-screen flex flex-col items-center justify-center">
-        <div className="goo-canvas">
-          <div className="goo-blur">
-            <div className="goo-class goo1"></div>
-            <div className="goo-class goo2"></div>
-          </div>
+      <section className="relative h-screen w-screen flex flex-col items-center justify-center">
+        <div className="goo-container">
+          <div className="goo-class goo1"></div>
+          <div className="goo-class goo2"></div>
         </div>
 
-        <div className="container flex flex-col justify-center items-center text-center absolute float-up">
+        <div className="container flex flex-col justify-center items-center text-center float-up relative">
           <h1 className="md:text-[70px] text-[50px] mb-3 font-bold gradientText">
             {"Hi, I'm Kang"}
           </h1>
 
           <p className="sm:text-lg max-w-[500px] leading-normal text-default pointer-events-none px-3">
-            Fullstack React Developer with <br className="sm:hidden" />4 Years
-            of Experience.
+            Fullstack React Developer with <br className="sm:hidden" />5 years
+            of work and SaaS experience.
           </p>
 
           <div className="sm:mt-4 mt-3 flex items-center gap-8 z-50">
-            {/* todo: refactor repeated part */}
             <Link
               href="https://github.com/yewyewxd"
               target="_blank"
-              className="p-1 rounded-md hover:bg-white hover:opacity-70"
+              rel="noreferrer noopener"
+              className="p-1 rounded-md hover:bg-white"
             >
               <Github className="sm:size-8 size-7" />
             </Link>
@@ -82,7 +80,8 @@ export default function Home() {
             <Link
               href="https://www.linkedin.com/in/yewyewxd"
               target="_blank"
-              className="p-1 rounded-md hover:bg-white hover:opacity-70"
+              rel="noreferrer noopener"
+              className="p-1 rounded-md hover:bg-white"
             >
               <LinkedIn className="sm:size-8 size-7" />
             </Link>
@@ -90,14 +89,15 @@ export default function Home() {
             <Link
               href="/resume.pdf"
               target="_blank"
-              className="p-1 rounded-md hover:bg-white hover:opacity-70"
+              rel="noreferrer noopener"
+              className="p-1 rounded-md hover:bg-white"
             >
               <Resume className="sm:size-8 size-7" />
             </Link>
           </div>
 
           <Link
-            className="mt-10 flex flex-col items-center gap-2 transition-opacity duration-200 hover:opacity-60 text-default sm:text-lg"
+            className="mt-10 flex flex-col items-center gap-2 text-default hover:text-black sm:text-lg"
             href="#projects"
           >
             <span>See Projects</span>
