@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
-import { ArrowDown, Github, LinkedIn, Resume } from '@/components/Icons'
+import { ChevronDown, Github, LinkedIn, Resume } from '@/components/Icons'
 import Image from 'next/image'
 import Head from 'next/head'
 // import reviews from '@/json/reviews.json'
@@ -50,7 +50,8 @@ export default function Home() {
 
       <Navbar />
 
-      <section className="xl:h-[80vh] h-screen flex flex-col items-center justify-center">
+      {/* Section 1: Hero */}
+      <section className="h-screen flex flex-col items-center justify-center">
         <div className="container flex flex-col justify-center items-center text-center absolute float-up">
           <h1 className="md:text-[70px] text-[50px] mb-3 font-bold gradientText">
             {"Hi, I'm Kang"}
@@ -62,37 +63,38 @@ export default function Home() {
           </p>
 
           <div className="sm:mt-4 mt-3 flex items-center gap-8 z-50">
+            {/* todo: refactor repeated part */}
             <Link
               href="https://github.com/yewyewxd"
               target="_blank"
-              className="p-1 rounded hover:bg-white hover:opacity-70"
+              className="p-1 rounded-md hover:bg-white hover:opacity-70"
             >
-              <Github className="sm:w-8 sm:h-8 w-7 h-7" />
+              <Github className="sm:size-8 size-7" />
             </Link>
 
             <Link
               href="https://www.linkedin.com/in/yewyewxd"
               target="_blank"
-              className="p-1 rounded hover:bg-white hover:opacity-70"
+              className="p-1 rounded-md hover:bg-white hover:opacity-70"
             >
-              <LinkedIn className="sm:w-8 sm:h-8 w-7 h-7" />
+              <LinkedIn className="sm:size-8 size-7" />
             </Link>
 
             <Link
               href="/resume.pdf"
               target="_blank"
-              className="p-1 rounded hover:bg-white hover:opacity-70"
+              className="p-1 rounded-md hover:bg-white hover:opacity-70"
             >
-              <Resume className="sm:w-8 sm:h-8 w-7 h-7" />
+              <Resume className="sm:size-8 size-7" />
             </Link>
           </div>
 
           <Link
-            className="mt-12 flex flex-col items-center gap-1 transition-opacity duration-200 hover:opacity-60 cursor-pointer z-50 text-default sm:text-lg"
+            className="mt-10 flex flex-col items-center gap-2 transition-opacity duration-200 hover:opacity-60 text-default sm:text-lg"
             href="#projects"
           >
             <span>See Projects</span>
-            <ArrowDown className="w-4 h-4" />
+            <ChevronDown className="size-6 animate-bounce" />
           </Link>
         </div>
       </section>
@@ -108,7 +110,7 @@ export default function Home() {
               <div className="lg:p-16 p-8 lg:pr-0 lg:pb-16 sm:pb-0 pb-4">
                 <div className="mb-3">
                   <Image
-                    className="sm:w-8 sm:h-8 w-6 h-6 rounded"
+                    className="sm:size-8 size-6 rounded"
                     src={project.image}
                     alt={`Logo of ${project.title}`}
                     height={32}
