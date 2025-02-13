@@ -1,25 +1,27 @@
-export const ArrowDown = ({ className }: any) => {
+interface IProps {
+  className?: string
+}
+
+export const ChevronDown = ({ className }: IProps) => {
   return (
-    <div>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className={className}
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
-        />
-      </svg>
-    </div>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className={className}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="m19.5 8.25-7.5 7.5-7.5-7.5"
+      />
+    </svg>
   )
 }
 
-export const Home = ({ className }: any) => {
+export const Home = ({ className }: IProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +40,7 @@ export const Home = ({ className }: any) => {
   )
 }
 
-export const User = ({ className }: any) => {
+export const User = ({ className }: IProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +59,7 @@ export const User = ({ className }: any) => {
   )
 }
 
-export const Mail = ({ className }: any) => {
+export const Mail = ({ className }: IProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +78,7 @@ export const Mail = ({ className }: any) => {
   )
 }
 
-export const Document = ({ className }: any) => {
+export const Document = ({ className }: IProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +97,7 @@ export const Document = ({ className }: any) => {
   )
 }
 
-export const Resume = ({ className }: any) => {
+export const Resume = ({ className }: IProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +115,7 @@ export const Resume = ({ className }: any) => {
   )
 }
 
-export const Github = ({ className }: any) => (
+export const Github = ({ className }: IProps) => (
   // Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -130,7 +132,7 @@ export const Github = ({ className }: any) => (
   </svg>
 )
 
-export const LinkedIn = ({ className }: any) => (
+export const LinkedIn = ({ className }: IProps) => (
   // Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -147,7 +149,7 @@ export const LinkedIn = ({ className }: any) => (
   </svg>
 )
 
-export const Website = ({ className }: any) => (
+export const Website = ({ className }: IProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -164,7 +166,7 @@ export const Website = ({ className }: any) => (
   </svg>
 )
 
-export const IOS = ({ className }: any) => (
+export const IOS = ({ className }: IProps) => (
   // Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -176,7 +178,7 @@ export const IOS = ({ className }: any) => (
   </svg>
 )
 
-export const Android = ({ className }: any) => (
+export const Android = ({ className }: IProps) => (
   // Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.
   <svg
     xmlns="http://www.w3.org/2000/svg"
