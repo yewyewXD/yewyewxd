@@ -21,9 +21,6 @@ const config: Config = {
         footer: '#f1f1f1',
       },
       colors: {
-        main: '#FFFFF0',
-        primary: '#e9d78e',
-        secondary: '#F3EDC8',
         lightGrey: '#f6f6f6',
         shadow: '#e6ebef',
       },
