@@ -9,22 +9,21 @@ import Head from 'next/head'
 
 const PROJECTS = [
   {
-    link: '/adonis-map',
+    link: '/projects/skoolmap',
     image: '/images/adonis-map/logo.png',
-    title: 'Adonis Map',
-    role: 'NEXT.JS FULLSTACK',
-    year: '2024',
-    description: 'Unite community members in real life.',
+    title: 'Skool Map',
+    description:
+      'A SaaS that helps Skool community members meet up in real life.',
     coverImage: '/images/adonis-map/front_cover.png',
+    skills: ['nextjs', 'nodejs'],
   },
   {
-    link: '/spuun',
+    link: '/projects/spuun',
     image: '/images/spuun/logo.png',
     title: 'Spuun',
-    role: 'FULLSTACK & MOBILE',
-    year: '2022',
     description: 'Help restaurants in Bangkok sell online.',
     coverImage: '/images/spuun/front_cover.png',
+    skills: ['nextjs'],
   },
 ]
 
@@ -106,7 +105,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="projects" className="py-8 sm:mb-16 mb-4">
+      <section id="projects" className="py-8 sm:mb-16 mb-4 relative">
         <div className="flex flex-col justify-center items-center container sm:gap-24 gap-12">
           {PROJECTS.map((project) => (
             <Link
@@ -115,32 +114,41 @@ export default function Home() {
               className="lg:w-[900px] flex lg:flex-row flex-col justify-between overflow-hidden bg-card rounded-3xl transition-all duration-300 md:hover:scale-[1.02] md:hover:shadow-lg shadow-shadow hover:bg-default"
             >
               <div className="lg:p-16 p-8 lg:pr-0 lg:pb-16 sm:pb-0 pb-4">
-                <div className="mb-3">
+                <div className="mb-3"></div>
+                <div className="flex items-center gap-3 sm:text-4xl text-2xl font-bold mb-3 tracking-tight leading-[140%]">
+                  {project.title}
                   <Image
                     className="sm:size-8 size-6 rounded"
                     src={project.image}
-                    alt={`Logo of ${project.title}`}
+                    alt={project.title}
                     height={32}
                     width={32}
                   />
                 </div>
-                <div className="sm:text-4xl text-2xl font-bold mb-1 tracking-tight leading-[140%]">
-                  {project.title}
-                </div>
-                <div className="text-sm text-default mb-3 font-semibold tracking-widest">
-                  {project.role}
-                  <span className="mx-2 text-dot">•</span>
-                  {project.year}
-                </div>
-                <div className="sm:text-lg text-default mb-6">
+
+                <div className="sm:text-lg text-default mb-3">
                   {project.description}
                 </div>
+
+                <div className="flex items-center gap-2 mb-6">
+                  {project.skills.map((skill) => (
+                    <Image
+                      key={project.title + skill}
+                      title={skill}
+                      src={`/images/icon_${skill}.svg`}
+                      alt={skill}
+                      height={28}
+                      width={28}
+                    />
+                  ))}
+                </div>
+
                 <button className="sm:text-lg sm:py-4 py-3 sm:px-6 px-4 text-default rounded-xl bg-white">
                   Read the Case Study
                 </button>
               </div>
 
-              <div className="relative">
+              <div className="relative flex-shrink-0">
                 <Image
                   width={480}
                   height={400}
