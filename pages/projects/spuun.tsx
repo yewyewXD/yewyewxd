@@ -4,7 +4,7 @@ import Footer from '@/components/Footer'
 import Image from 'next/image'
 import Link from 'next/link'
 import Head from 'next/head'
-import { Android, IOS, Website } from '@/components/Icons'
+import { IOS, Website } from '@/components/Icons'
 
 const META_TITLE = "Spuun Case Study | Kang's Portfolio"
 const META_DESCRIPTION =
@@ -68,7 +68,7 @@ const SpuunPage = () => {
               target="_blank"
               rel="noreferrer noopener"
             >
-              <Website className="w-5 h-5" /> Live
+              <Website className="w-5 h-5" /> Landing
             </Link>
             <Link
               className="underline text-blue-700 md:hover:opacity-70 flex items-center gap-1"
@@ -78,14 +78,14 @@ const SpuunPage = () => {
             >
               <IOS className="w-5 h-5" /> IOS
             </Link>
-            <Link
+            {/* <Link
               className="underline text-blue-700 md:hover:opacity-70 flex items-center gap-1"
               href="https://play.google.com/store/apps/details?id=space.palate"
               target="_blank"
               rel="noreferrer noopener"
             >
               <Android className="w-5 h-5" /> Android
-            </Link>
+            </Link> */}
           </div>
         </div>
 
