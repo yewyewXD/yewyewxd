@@ -66,7 +66,16 @@ const AdonisMapPage = () => {
             target="_blank"
             rel="noreferrer noopener"
           >
-            <Website className="w-5 h-5" /> Live
+            <Website className="w-5 h-5" /> Landing
+          </Link>
+
+          <Link
+            className="underline text-blue-700 md:hover:opacity-70 flex items-center gap-1"
+            href="https://games.skoolmap.io"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <Website className="w-5 h-5" /> App
           </Link>
         </div>
 
