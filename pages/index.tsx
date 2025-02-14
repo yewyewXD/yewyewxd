@@ -24,7 +24,7 @@ const PROJECTS = [
     title: 'Spuun',
     description: 'Help restaurants in Bangkok sell online.',
     coverImage: '/images/spuun/front_cover.png',
-    skills: ['nextjs'],
+    skills: ['nextjs', 'nodejs', 'RN'],
   },
 ]
 
