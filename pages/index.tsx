@@ -1,9 +1,10 @@
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
-import { ChevronDown, Github, LinkedIn, Resume } from '@/components/Icons'
+import { ChevronDown } from '@/components/Icons'
 import Image from 'next/image'
 import Head from 'next/head'
+import Socials from '@/components/Socials'
 // import reviews from '@/json/reviews.json'
 // import ReviewCard from '@/components/ReviewCard'
 
@@ -67,32 +68,7 @@ export default function Home() {
           </p>
 
           <div className="sm:mt-4 mt-3 flex items-center gap-8 z-50">
-            <Link
-              href="https://github.com/yewyewxd"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="p-1 rounded-md hover:bg-white"
-            >
-              <Github className="sm:size-8 size-7" />
-            </Link>
-
-            <Link
-              href="https://www.linkedin.com/in/yewyewxd"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="p-1 rounded-md hover:bg-white"
-            >
-              <LinkedIn className="sm:size-8 size-7" />
-            </Link>
-
-            <Link
-              href="/resume.pdf"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="p-1 rounded-md hover:bg-white"
-            >
-              <Resume className="sm:size-8 size-7" />
-            </Link>
+            <Socials />
           </div>
 
           <Link
