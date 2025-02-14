@@ -11,15 +11,19 @@ const PROPS = {
 const Socials = () => {
   return (
     <>
-      <Link href="https://github.com/yewyewxd" {...PROPS}>
+      <Link title="Github" href="https://github.com/yewyewxd" {...PROPS}>
         <Github className="sm:size-8 size-7" />
       </Link>
 
-      <Link href="https://www.linkedin.com/in/yewyewxd" {...PROPS}>
+      <Link
+        title="LinkedIn"
+        href="https://www.linkedin.com/in/yewyewxd"
+        {...PROPS}
+      >
         <LinkedIn className="sm:size-8 size-7" />
       </Link>
 
-      <Link href="/resume.pdf" {...PROPS}>
+      <Link title="Resume" href="/resume.pdf" {...PROPS}>
         <Resume className="sm:size-8 size-7" />
       </Link>
     </>
