@@ -29,7 +29,7 @@ const SpuunPage = () => {
 
       <Navbar hasBack />
 
-      <div className="container">
+      <div className="container text-contentDark">
         <div className="sm:pt-28 pt-24 sm:pb-20 pb-8">
           <Image
             className="w-[800px] mx-auto object-contain sm:rounded-2xl rounded-lg sm:shadow-2xl shadow-lg"
@@ -50,11 +50,11 @@ const SpuunPage = () => {
           />
         </div>
 
-        <h1 className="sm:text-5xl text-4xl font-bold mb-3 leading-snug text-contentDark">
+        <h1 className="sm:text-5xl text-4xl font-bold mb-3 leading-snug ">
           TCMFinder
         </h1>
 
-        <div className="text-lg font-medium sm:mb-8 mb-6 text-default flex items-center gap-x-3 flex-wrap">
+        <div className="text-lg font-medium sm:mb-8 mb-6  flex items-center gap-x-3 flex-wrap">
           <span>
             TCMFinder.org<span className="mx-2">•</span>
             2023
@@ -84,12 +84,11 @@ const SpuunPage = () => {
 
         <div className="grid lg:grid-cols-2">
           <p className="sm:text-lg lg:mr-16">
-            TCMFinder is a non-profit project that helps Singaporean find the
-            best Traditional Chinese Medicine (TCM) clinic based on their
-            symptoms.
+            TCMFinder is a hobby project that helps Singaporean find the best
+            Traditional Chinese Medicine (TCM) clinic based on their symptoms.
           </p>
 
-          <div className="grid sm:grid-cols-2 text-contentDark lg:mt-0 mt-16">
+          <div className="grid sm:grid-cols-2  lg:mt-0 mt-16">
             <div className="mr-8">
               <div className="mb-8">
                 <h2 className="font-bold mb-2 text-sm tracking-widest">ROLE</h2>
@@ -111,7 +110,7 @@ const SpuunPage = () => {
           </div>
         </div>
 
-        <div className="mx-auto max-w-[664px] px-8 py-6 bg-white rounded-xl sm:my-16 my-12 text-contentDark">
+        <div className="mx-auto max-w-[664px] px-8 py-6 bg-white rounded-xl sm:my-16 my-12 ">
           <h2 className="font-bold mb-2 text-sm tracking-widest">PROBLEM</h2>
           <p className="sm:text-lg">
             Finding the right TCM clinic for a specific chronic symptom is hard.
@@ -120,150 +119,156 @@ const SpuunPage = () => {
           </p>
         </div>
 
-        <div className="flex items-center justify-center sm:gap-20 gap-6 text-center">
-          <div>
-            <Image
-              className="sm:rounded-2xl rounded-lg shadow-lg"
-              src="/images/spuun/casestudy1-1.png"
-              alt="KFC original price"
-              width={250}
-              height={600}
-            />
-            <p className="text-footer text-sm mt-6">
-              Original Price
-              <br className="sm:hidden" />
-              <span className="sm:inline hidden"> -</span> ฿159
+        {/* <div className="max-w-[600px] mx-auto sm:my-16 my-8 sm:text-lg ">
+          <div className="mb-6 flex flex-col gap-1">
+            <p className="mb-1">
+              I had a chronic back pain. So I needed a clinic that:
+            </p>
+            <p>1. Has a natural treatment (no surgery)</p>
+            <p>2. Is not too far away</p>
+            <p>3. Has cured chronic back pain patients before</p>
+            <p>4. Is well-rated, 4.5 stars or above</p>
+          </div>
+        </div> */}
+
+        <Image
+          className="sm:rounded-2xl rounded-lg shadow-lg mx-auto"
+          src="/images/tcmfinder/map_search.png"
+          alt="Google Maps search result"
+          width={250}
+          height={600}
+        />
+
+        <div className="max-w-[600px] mx-auto sm:my-16 my-8 sm:text-lg ">
+          <div className="mb-6 flex flex-col gap-1">
+            <p className="mb-1">
+              <p className="mb-1">
+                My process of finding a suitable clinic for chronic back pain:
+              </p>
+            </p>
+            <p>1. Search for &quot;best tcm near me&quot; on Google Maps.</p>
+            <p>2. Click on the ones that are not too far away.</p>
+            <p>
+              3. Go through all their reviews to find whether they have cured
+              chronic back pain before.
             </p>
           </div>
 
-          <div>
-            <Image
-              className="sm:rounded-2xl rounded-lg shadow-lg"
-              src="/images/spuun/casestudy1-2.png"
-              alt="KFC price on GrabFood"
-              width={250}
-              height={600}
-            />
-            <p className="text-footer text-sm mt-6">
-              Price on GrabGood
-              <br className="sm:hidden" />
-              <span className="sm:inline hidden"> -</span> ฿179
-            </p>
-          </div>
-        </div>
-
-        <div className="max-w-[600px] mx-auto sm:my-16 my-8 sm:text-lg text-default">
           <p className="mb-6">
-            From the comparisons above, you can see that the price of fast food
-            listed on GrabFood is about 12% higher. This percentage is usually
-            significantly higher for restaurants.
-          </p>
-
-          <p className="mb-6">
-            To ensure profitability despite the 15% fee for each {"'pick-up'"}{' '}
-            order, we would need to raise prices by at least 10% to break even,
-            given that our net profit margin per order is approximately 5%.
-          </p>
-
-          <p>
-            If the customer opts for delivery, the fee will escalate to 30%,
-            forcing us to increase the price even more. This could lead to
-            numerous customer complaints.
+            It took me hours to shortlist a few clinics, and{' '}
+            <strong>6 months trying 4 different clinics</strong> to finally land
+            on the one that could heal me.
           </p>
         </div>
 
-        <div className="mx-auto max-w-[664px] px-8 py-6 bg-white rounded-xl sm:my-16 my-14 text-contentDark">
+        <div className="mx-auto max-w-[664px] px-8 py-6 bg-white rounded-xl sm:my-16 my-14 ">
           <h2 className="font-bold mb-2 text-sm tracking-widest">OUR VISION</h2>
           <p className="sm:text-lg">
-            Since COVID, many customers prefer ordering from home. We need to
-            maintain our reputation as the top Singaporean restaurant in Bangkok
-            without compromising profitability. What if we developed our own
-            food delivery app and avoided commission fees altogether?
+            To ensure others would never have to go through the same pain, we
+            need a clinic search engine that factors in rating, distance, and{' '}
+            <strong>symptoms</strong>, which is what&apos;s missing on Google
+            Maps.
           </p>
         </div>
 
         <div className="max-w-[600px] mx-auto sm:mt-24 mt-20 mb-14">
-          <h2 className="font-bold mb-2 text-sm tracking-widest text-defaulter">
+          <h2 className="font-bold mb-2 text-sm tracking-widest er">
             FEATURES
           </h2>
-          <h3 className="text-2xl font-semibold mb-3 text-contentDark">
-            Online Ordering
-          </h3>
-          <p className="sm:text-lg text-contentDark">
-            We are launching dedicated web stores for each of our restaurants,
-            starting with{' '}
-            <Link
-              className="md:hover:opacity-70 underline"
-              href="https://ohjackie.spuun.me/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              Oh Jackie
-            </Link>{' '}
-            as a trial run. Customers can now conveniently order their favorite
-            Singaporean dishes online at the original price!
+          <h3 className="text-2xl font-semibold mb-3 ">Symptoms Matching</h3>
+          <p className="sm:text-lg  mb-6">
+            I scrapped and indexed over 30,000 reviews across every TCM clinics
+            in the entire country to make them easily searchable.
+          </p>
+
+          <p className="sm:text-lg ">
+            Searching for &quot;back pain&quot; will give you top clinics that
+            have the most back pain related reviews.
           </p>
         </div>
 
         <Image
           className="mx-auto rounded-xl shadow-lg"
-          src="/images/spuun/curry_puff.png"
-          alt="Add to cart modal on the Spuun web store"
+          src="/images/tcmfinder/reviews_browse.png"
+          alt="TCMFinder search result"
           width={250}
           height={500}
         />
 
-        <div className="max-w-[600px] mx-auto sm:mt-24 mt-20 mb-14 text-contentDark">
-          <h3 className="text-2xl font-semibold mb-3">Payment Processing</h3>
+        <div className="max-w-[600px] mx-auto sm:mt-24 mt-20 mb-14 ">
+          <h3 className="text-2xl font-semibold mb-3">Distance Sorting</h3>
           <p className="sm:text-lg">
-            We use Stripe for processing payments and Stripe Connect for
-            managing payments for each of our restaurants separately. This setup
-            is highly scalable, allowing us to seamlessly onboard additional
-            restaurants onto our platform in the future.
+            Distance sorting serves users who prioritize proximity over the best
+            clinic, as long as it treats their symptoms
           </p>
         </div>
 
         <div className="max-w-[600px] h-auto mx-auto">
           <Image
             className="rounded-xl shadow-lg"
-            src={'/images/spuun/feature2.svg'}
+            src={'/images/tcmfinder/distance_sort.png'}
             width={900}
             height={563}
-            alt={`Stripe Payments`}
+            alt={`Distance sorting`}
           />
         </div>
 
-        <div className="max-w-[600px] mx-auto sm:mt-24 mt-20 mb-14 text-contentDark">
-          <h3 className="text-2xl font-semibold mb-3">Food Delivery</h3>
+        <div className="max-w-[600px] mx-auto sm:mt-24 mt-20 mb-14 ">
+          <h3 className="text-2xl font-semibold mb-3">Clinic Details</h3>
           <p className="sm:text-lg">
-            {`
-          We're thrilled to announce our partnership with Lalamove! Now, with just one click, we can easily match with a driver and get the deliveries sorted in no time. Plus, here's the cherry on top: Lalamove's fare rates are usually 10% lower than GrabFood's, making it a win-win situation for everyone involved!
-            `}
+            For each clinic, we provide the reviews, location, contact, and
+            opening hours. This helps users know exactly where and when to visit
+            the clinic.
           </p>
         </div>
 
-        <Image
-          className="mx-auto rounded-xl shadow-lg"
-          src="/images/spuun/feature3.png"
-          alt="Lalamove and Spuun partnership"
-          width={600}
-          height={400}
-        />
+        <div className="flex items-center justify-center sm:gap-20 gap-6 text-center">
+          <div>
+            <Image
+              className="sm:rounded-2xl rounded-lg shadow-lg"
+              src="/images/tcmfinder/clinicpage1.png"
+              alt="Clinic page top"
+              width={250}
+              height={600}
+            />
+          </div>
+
+          <div>
+            <Image
+              className="sm:rounded-2xl rounded-lg shadow-lg"
+              src="/images/tcmfinder/clinicpage2.png"
+              alt="Clinic page bottom"
+              width={250}
+              height={600}
+            />
+          </div>
+        </div>
 
         <div className="max-w-[600px] mx-auto sm:mt-24 mt-20 mb-14">
-          <h2 className="font-bold mb-2 text-sm tracking-widest text-contentDark">
-            RESULTS
-          </h2>
+          <h2 className="font-bold mb-2 text-sm tracking-widest ">RESULTS</h2>
 
-          <p className="sm:text-lg text-default">
-            On average, we receive 20 online orders per day, leading us to
-            estimate{' '}
-            <strong>
-              revenue of ฿400,000 (~10k USD) per month, solely from online
-              orders!
-            </strong>{' '}
-            We will soon integrate this delivery solution into many of our
-            restaurants, which could <strong>easily 4x our revenue!</strong>
+          <p className="sm:text-lg ">
+            On average, the website gets <strong>5-10 clicks per day</strong>.
+            The main drivers of our traffic are Google SEO and social media
+            content creation.
+          </p>
+        </div>
+
+        <div className="max-w-[600px] h-auto mx-auto mb-14">
+          <Image
+            className="rounded-xl shadow-lg"
+            src={'/images/tcmfinder/search_analytics.png'}
+            width={900}
+            height={563}
+            alt={`Google Analytics result`}
+          />
+        </div>
+
+        <div className="max-w-[600px] mx-auto mb-14">
+          <p className="sm:text-lg ">
+            The website requires daily content creation to attract new users.
+            Due to the lack of resources, it is no longer being maintained, but
+            may be open-sourced in the future.
           </p>
         </div>
       </div>
