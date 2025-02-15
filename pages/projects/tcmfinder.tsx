@@ -33,8 +33,8 @@ const SpuunPage = () => {
         <div className="sm:pt-28 pt-24 sm:pb-20 pb-8">
           <Image
             className="w-[800px] mx-auto object-contain sm:rounded-2xl rounded-lg sm:shadow-2xl shadow-lg"
-            src="/images/spuun/cover.png"
-            alt="Cover Image of Spuun"
+            src="/images/tcmfinder/cover.png"
+            alt="Cover Image of TCMFinder"
             height={600}
             width={1000}
           />
@@ -43,41 +43,34 @@ const SpuunPage = () => {
         <div className="sm:mb-4 mb-3">
           <Image
             className="sm:w-8 sm:h-8 w-6 h-6 rounded"
-            src="/images/spuun/logo.png"
-            alt="Logo of Spuun"
+            src="/images/tcmfinder/logo.png"
+            alt="Logo of TCMFinder"
             height={32}
             width={32}
           />
         </div>
 
         <h1 className="sm:text-5xl text-4xl font-bold mb-3 leading-snug text-contentDark">
-          Spuun
+          TCMFinder
         </h1>
 
         <div className="text-lg font-medium sm:mb-8 mb-6 text-default flex items-center gap-x-3 flex-wrap">
           <span>
-            Venture Group<span className="mx-2">•</span>
-            2022
+            TCMFinder.org<span className="mx-2">•</span>
+            2023
           </span>
           <span>-</span>
 
           <div className="flex items-center gap-x-4">
             <Link
               className="underline text-blue-700 md:hover:opacity-70 flex items-center gap-1"
-              href="https://www.spuun.me"
+              href="https://tcmfinder.org"
               target="_blank"
               rel="noreferrer noopener"
             >
-              <Website className="w-5 h-5" /> Landing
+              <Website className="w-5 h-5" /> Website
             </Link>
-            <Link
-              className="underline text-blue-700 md:hover:opacity-70 flex items-center gap-1"
-              href="https://apps.apple.com/us/app/spuun-merchant/id1636123515"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <IOS className="w-5 h-5" /> IOS
-            </Link>
+
             {/* <Link
               className="underline text-blue-700 md:hover:opacity-70 flex items-center gap-1"
               href="https://play.google.com/store/apps/details?id=space.palate"
@@ -91,41 +84,28 @@ const SpuunPage = () => {
 
         <div className="grid lg:grid-cols-2">
           <p className="sm:text-lg lg:mr-16">
-            Venture Group is a holding company of multiple food and beverage
-            brands in Bangkok, with{' '}
-            <Link
-              className="md:hover:opacity-70 underline"
-              href="https://maps.app.goo.gl/e8VdgPYxYTN2GPWo9"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              {"Ping's"}
-            </Link>{' '}
-            as their most renowned restaurant serving Singaporean dishes.
+            TCMFinder is a non-profit project that helps Singaporean find the
+            best clinic based on their symptoms.
           </p>
 
           <div className="grid sm:grid-cols-2 text-contentDark lg:mt-0 mt-16">
             <div className="mr-8">
               <div className="mb-8">
                 <h2 className="font-bold mb-2 text-sm tracking-widest">ROLE</h2>
-                <p>Fullstack Engineer</p>
+                <p>Designer & Developer</p>
               </div>
 
               <div className="flex flex-col gap-2 sm:mb-0 mb-8">
                 <h2 className="font-bold text-sm tracking-widest">
                   TECH STACK
                 </h2>
-                <p>
-                  React Native, Next.js, Node.js, Express.js, PostgreSQL,
-                  Prisma, Redis
-                </p>
+                <p>Next.js, Meilisearch, Sanity, Figma</p>
               </div>
             </div>
 
             <div className="flex flex-col gap-2 sm:mb-0 mb-8">
               <h2 className="font-bold text-sm tracking-widest">CREDITS</h2>
-              <p>Junius Sim, Founder</p>
-              <p>Aimmy, Designer</p>
+              <p>Zheng De TCM Healthcare</p>
             </div>
           </div>
         </div>

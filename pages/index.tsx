@@ -10,6 +10,14 @@ import Socials from '@/components/Socials'
 
 const PROJECTS = [
   {
+    link: '/projects/tcmfinder',
+    image: '/images/tcmfinder/logo.png',
+    title: 'TCMFinder',
+    description: 'Chinese medicine clinic search engine for Singaporean.',
+    coverImage: '/images/tcmfinder/front_cover.png',
+    skills: ['nextjs'],
+  },
+  {
     link: '/projects/skoolmap',
     image: '/images/skoolmap/logo.png',
     title: 'Skool Map',
@@ -22,7 +30,8 @@ const PROJECTS = [
     link: '/projects/spuun',
     image: '/images/spuun/logo.png',
     title: 'Spuun',
-    description: 'Help restaurants in Bangkok sell online.',
+    description:
+      'Web & mobile app that helps restaurants in Bangkok sell online.',
     coverImage: '/images/spuun/front_cover.png',
     skills: ['nextjs', 'nodejs', 'RN'],
   },
