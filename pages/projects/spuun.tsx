@@ -29,7 +29,7 @@ const SpuunPage = () => {
 
       <Navbar hasBack />
 
-      <div className="container">
+      <div className="container text-contentDark">
         <div className="sm:pt-28 pt-24 sm:pb-20 pb-8">
           <Image
             className="w-[800px] mx-auto object-contain sm:rounded-2xl rounded-lg sm:shadow-2xl shadow-lg"
@@ -50,11 +50,11 @@ const SpuunPage = () => {
           />
         </div>
 
-        <h1 className="sm:text-5xl text-4xl font-bold mb-3 leading-snug text-contentDark">
+        <h1 className="sm:text-5xl text-4xl font-bold mb-3 leading-snug ">
           Spuun
         </h1>
 
-        <div className="text-lg font-medium sm:mb-8 mb-6 text-default flex items-center gap-x-3 flex-wrap">
+        <div className="text-lg font-medium sm:mb-8 mb-6  flex items-center gap-x-3 flex-wrap">
           <span>
             Venture Group<span className="mx-2">•</span>
             2022
@@ -104,7 +104,7 @@ const SpuunPage = () => {
             as their most renowned restaurant serving Singaporean dishes.
           </p>
 
-          <div className="grid sm:grid-cols-2 text-contentDark lg:mt-0 mt-16">
+          <div className="grid sm:grid-cols-2  lg:mt-0 mt-16">
             <div className="mr-8">
               <div className="mb-8">
                 <h2 className="font-bold mb-2 text-sm tracking-widest">ROLE</h2>
@@ -130,7 +130,7 @@ const SpuunPage = () => {
           </div>
         </div>
 
-        <div className="mx-auto max-w-[664px] px-8 py-6 bg-white rounded-xl sm:my-16 my-12 text-contentDark">
+        <div className="mx-auto max-w-[664px] px-8 py-6 bg-white rounded-xl sm:my-16 my-12 ">
           <h2 className="font-bold mb-2 text-sm tracking-widest">PROBLEM</h2>
           <p className="sm:text-lg">
             Food delivery services like GrabFood and Foodpanda often impose a
@@ -171,7 +171,7 @@ const SpuunPage = () => {
           </div>
         </div>
 
-        <div className="max-w-[600px] mx-auto sm:my-16 my-8 sm:text-lg text-default">
+        <div className="max-w-[600px] mx-auto sm:my-16 my-8 sm:text-lg ">
           <p className="mb-6">
             From the comparisons above, you can see that the price of fast food
             listed on GrabFood is about 12% higher. This percentage is usually
@@ -191,7 +191,7 @@ const SpuunPage = () => {
           </p>
         </div>
 
-        <div className="mx-auto max-w-[664px] px-8 py-6 bg-white rounded-xl sm:my-16 my-14 text-contentDark">
+        <div className="mx-auto max-w-[664px] px-8 py-6 bg-white rounded-xl sm:my-16 my-14 ">
           <h2 className="font-bold mb-2 text-sm tracking-widest">OUR VISION</h2>
           <p className="sm:text-lg">
             Since COVID, many customers prefer ordering from home. We need to
@@ -202,13 +202,9 @@ const SpuunPage = () => {
         </div>
 
         <div className="max-w-[600px] mx-auto sm:mt-24 mt-20 mb-14">
-          <h2 className="font-bold mb-2 text-sm tracking-widest text-defaulter">
-            FEATURES
-          </h2>
-          <h3 className="text-2xl font-semibold mb-3 text-contentDark">
-            Online Ordering
-          </h3>
-          <p className="sm:text-lg text-contentDark">
+          <h2 className="font-bold mb-2 text-sm tracking-widest">FEATURES</h2>
+          <h3 className="text-2xl font-semibold mb-3 ">Online Ordering</h3>
+          <p className="sm:text-lg ">
             We are launching dedicated web stores for each of our restaurants,
             starting with{' '}
             <Link
@@ -232,7 +228,7 @@ const SpuunPage = () => {
           height={500}
         />
 
-        <div className="max-w-[600px] mx-auto sm:mt-24 mt-20 mb-14 text-contentDark">
+        <div className="max-w-[600px] mx-auto sm:mt-24 mt-20 mb-14 ">
           <h3 className="text-2xl font-semibold mb-3">Payment Processing</h3>
           <p className="sm:text-lg">
             We use Stripe for processing payments and Stripe Connect for
@@ -252,7 +248,7 @@ const SpuunPage = () => {
           />
         </div>
 
-        <div className="max-w-[600px] mx-auto sm:mt-24 mt-20 mb-14 text-contentDark">
+        <div className="max-w-[600px] mx-auto sm:mt-24 mt-20 mb-14 ">
           <h3 className="text-2xl font-semibold mb-3">Food Delivery</h3>
           <p className="sm:text-lg">
             {`
@@ -270,11 +266,9 @@ const SpuunPage = () => {
         />
 
         <div className="max-w-[600px] mx-auto sm:mt-24 mt-20 mb-14">
-          <h2 className="font-bold mb-2 text-sm tracking-widest text-contentDark">
-            RESULTS
-          </h2>
+          <h2 className="font-bold mb-2 text-sm tracking-widest ">RESULTS</h2>
 
-          <p className="sm:text-lg text-default">
+          <p className="sm:text-lg ">
             On average, we receive 20 online orders per day, leading us to
             estimate{' '}
             <strong>
