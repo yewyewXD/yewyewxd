@@ -4,7 +4,7 @@ import Footer from '@/components/Footer'
 import Image from 'next/image'
 import Link from 'next/link'
 import Head from 'next/head'
-import { IOS, Website } from '@/components/Icons'
+import { Website } from '@/components/Icons'
 
 const META_TITLE = "Spuun Case Study | Kang's Portfolio"
 const META_DESCRIPTION =
@@ -85,7 +85,8 @@ const SpuunPage = () => {
         <div className="grid lg:grid-cols-2">
           <p className="sm:text-lg lg:mr-16">
             TCMFinder is a non-profit project that helps Singaporean find the
-            best clinic based on their symptoms.
+            best Traditional Chinese Medicine (TCM) clinic based on their
+            symptoms.
           </p>
 
           <div className="grid sm:grid-cols-2 text-contentDark lg:mt-0 mt-16">
@@ -113,9 +114,9 @@ const SpuunPage = () => {
         <div className="mx-auto max-w-[664px] px-8 py-6 bg-white rounded-xl sm:my-16 my-12 text-contentDark">
           <h2 className="font-bold mb-2 text-sm tracking-widest">PROBLEM</h2>
           <p className="sm:text-lg">
-            Food delivery services like GrabFood and Foodpanda often impose a
-            very high commission fee (Pickup - 15%, Delivery - 30%), which has
-            significantly impacted our profitability from online orders.
+            Finding the right TCM clinic for a specific chronic symptom is hard.
+            It takes asking around, reading hundreds of Google Maps reviews, and
+            trying multiple clinics.
           </p>
         </div>
 
