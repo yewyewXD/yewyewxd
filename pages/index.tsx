@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
-import { ChevronDown } from '@/components/Icons'
+import { ArrowRight, ChevronDown } from '@/components/Icons'
 import Image from 'next/image'
 import Head from 'next/head'
 import Socials from '@/components/Socials'
@@ -87,7 +87,7 @@ export default function Home() {
             <Link
               key={project.title}
               href={project.link}
-              className="lg:w-[900px] flex lg:flex-row flex-col justify-between overflow-hidden bg-card rounded-3xl transition-all duration-300 md:hover:scale-[1.02] md:hover:shadow-lg shadow-shadow hover:bg-default"
+              className="lg:w-[900px] flex lg:flex-row flex-col justify-between overflow-hidden bg-card rounded-3xl transition-all duration-300 md:hover:scale-[1.02] md:hover:shadow-lg shadow-shadow hover:bg-default group"
             >
               <div className="lg:p-16 p-8 lg:pr-0 lg:pb-16 sm:pb-0 pb-4">
                 <div className="mb-3"></div>
@@ -119,8 +119,9 @@ export default function Home() {
                   ))}
                 </div>
 
-                <button className="sm:text-lg sm:py-4 py-3 sm:px-6 px-4 text-default rounded-xl bg-white">
-                  Read the Case Study
+                <button className="sm:text-lg sm:py-4 py-3 sm:px-6 px-4 text-default rounded-xl bg-white flex items-center gap-2">
+                  Read More{' '}
+                  <ArrowRight className="size-5 transition-transform duration-200 group-hover:translate-x-1" />
                 </button>
               </div>
 
