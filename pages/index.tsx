@@ -61,7 +61,7 @@ export default function Home() {
 
       {/* Section 1: Hero */}
       <section className="relative h-screen w-screen flex flex-col items-center justify-center">
-        <div className="goo-container">
+        <div className="goo-container sm:block hidden">
           <div className="goo-class goo1"></div>
           <div className="goo-class goo2"></div>
         </div>
