@@ -6,9 +6,9 @@ import Link from 'next/link'
 import Head from 'next/head'
 import { Website } from '@/components/Icons'
 
-const META_TITLE = "Spuun Case Study | Kang's Portfolio"
+const META_TITLE = "TCMFinder Case Study | Kang's Portfolio"
 const META_DESCRIPTION =
-  'On average, we receive 20 online orders per day, leading us to estimate revenue of ฿400,000 (~10k USD) per month, solely from online orders! We will soon integrate this delivery solution into many of our restaurants, which could easily 4x our revenue!'
+  'On average, the website gets 5-10 clicks per day. The main drivers of our traffic are Google SEO and social media content creation.'
 
 const SpuunPage = () => {
   return (
